@@ -1,137 +1,101 @@
-# ECサイト価格・在庫追跡ツール
+# EC-tool
 
-このツールは、Amazon.co.jp、楽天市場、Yahoo!ショッピングの商品価格と在庫状況を自動的に追跡し、価格変動や在庫状況の変化があった場合に通知を送信するPythonアプリケーションです。
-
-## 機能
-
-- 複数ECサイト（Amazon.co.jp、楽天市場、Yahooショッピング）の商品情報を追跡
-- 定期的に商品データを自動収集し、データベースに保存
-- 価格変動（10%以上）や在庫状況の変化を検知して通知（メール・Slack）
-- 収集データをGoogle Spreadsheetに自動エクスポート
-- 商品の一括登録と管理
-
-## システム要件
-
-- Python 3.7以上
-- Google SheetsへのエクスポートにはGoogle Cloud Platform（GCP）アカウントとAPIキーが必要
-- Slack通知にはSlack APIのWebhook URLが必要
-- メール通知にはSMTPサーバーへのアクセス情報が必要
-
-## インストール
-
-1. リポジトリをクローンまたはダウンロード:
-
-```
-git clone [リポジトリURL]
-cd ec-tracker
-```
-
-2. セットアップスクリプトを実行:
-
-```
-python setup.py
-```
-
-セットアップスクリプトは以下を実行します:
-- 必要なPythonパッケージのインストール
-- 環境設定ファイル(.env)の作成
-- Google Sheets、Slack、メール通知、定期実行の設定手順の表示
-
-## 設定
-
-`.env` ファイルを編集して、以下の設定を行います:
-
-- データベース設定（SQLiteまたはPostgreSQL）
-- 通知設定（メール・Slack）
-- Google Sheets連携設定
-- ロギング設定
-- プロキシ設定（オプション）
+このツールは、Amazon（US）とAmazon（JP）の商品の価格を比較するためのPythonツールです。
 
 ## 使用方法
 
-### 商品の追加
+### 必要な環境
 
-単一商品の追加:
+- Python 3.x
+- Google Sheets API
+- Selenium、BeautifulSoup
 
-```
-python main.py add https://www.amazon.co.jp/dp/XXXXXXXXXX
-```
+### インストール
 
-複数商品の一括追加:
+以下のコマンドでライブラリをインストールしてください。
 
-```
-python main.py add-bulk products.txt
-```
-
-`products.txt` は各行に1つの商品URLを含むテキストファイルです。
-
-### 商品情報の更新
-
-すべての商品を更新:
-
-```
-python main.py update
+```bash
+pip install -r requirements.txt
 ```
 
-特定の商品を更新:
+### 実行手順
 
-```
-python main.py update --id 1
-```
+1. リポジトリをクローンします。
 
-### Google Sheetsへのエクスポート
-
-```
-python main.py export
+```bash
+git clone https://github.com/yourusername/EC-tool.git
 ```
 
-### 定期実行の設定
+1. 必要なライブラリをインストールします。
 
-指定した間隔で自動的に更新を実行:
-
-```
-python main.py schedule --interval 12  # 12時間ごとに更新
+```bash
+pip install -r requirements.txt
 ```
 
-## 定期実行の設定（cron）
+1. Seleniumで使用する`chromedriver.exe`を配置します。
 
-Linuxサーバーでcronを使用して定期実行する場合の例:
-
+```bash
+EC-tool/
+├── chromedriver.exe
+└── main.py
 ```
-# 6時間ごとに実行（0時、6時、12時、18時）
-0 */6 * * * cd /path/to/ec-tracker && /usr/bin/python3 main.py update
+
+1. スクリプトを実行します。
+
+```bash
+python main.py
 ```
 
-## Google Sheets連携のセットアップ
+## 設定
 
-1. Google Cloud Platform (GCP)でプロジェクトを作成
-2. Google Sheets APIを有効化
-3. OAuth 2.0クライアントIDを作成
-4. 認証情報（credentials.json）をダウンロードし、プロジェクトディレクトリに配置
-5. `.env`ファイルの`ENABLE_GSHEETS`を`True`に設定し、`GSHEETS_SPREADSHEET_ID`にスプレッドシートIDを設定
+`config.py`を作成し、Google Sheetsの情報を記入します。
+
+```python
+# config.py
+SHEET_ID = 'あなたのGSHEETSのID'
+SHEET_NAME = 'あなたのGSHEETSのシート名'
+```
+
+## 出力
+
+ツールを実行すると、以下の情報が`output.json`に保存されます。
+
+- 商品名
+- ASINコード
+- 価格（US、JP）
+- 最安値
+- 競合数
+
+```json
+{
+  "asin": "B00EXAMPLE",
+  "title": "サンプル商品",
+  "price": "$20.00",
+  "rating": "4.5",
+  "url": "https://www.amazon.com/sample-product",
+  "bought_in_past_month": "200",
+  "image_url": "https://images.amazon.com/sample-product.jpg",
+  "last_updated": "2024-08-19",
+  "amazon_fee": "$3.00",
+  "fba_fee": "$4.00",
+  "weight": "0.5kg",
+  "category": "Electronics",
+  "competitors": "15",
+  "lowest_price": "$18.00"
+}
+```
+
+## Excel出力
+
+取得したJSONデータをExcelにエクスポートする方法:
+
+```bash
+python export_to_excel.py
+```
+
+Excelに出力されたデータは、カテゴリごとにフィルターや並び替えが可能です。
 
 ## 注意事項
 
-- ECサイトの利用規約に違反しないよう、リクエスト間隔を適切に設定してください
-- スクレイピングの際はサーバーに負荷をかけないよう配慮してください
-- 個人利用の範囲内でお使いください
-
-## ファイル構成
-
-- `main.py` - メインアプリケーション
-- `config.py` - 設定モジュール
-- `database.py` - データベース操作モジュール
-- `scrapers.py` - ECサイトスクレイピングモジュール
-- `notifier.py` - 通知モジュール
-- `gsheets.py` - Google Sheets連携モジュール
-- `setup.py` - セットアップスクリプト
-- `.env.example` - 環境変数設定例
-- `products.txt` - 商品URLリスト例
-
-## 開発・貢献
-
-バグ報告や機能リクエストは、Issueを作成してください。プルリクエストも歓迎します。
-
-## ライセンス
-
-[適切なライセンス情報]
+- 頻繁にリクエストを行うとIPがブロックされる可能性があります。
+- 必ず適度な間隔をあけて使用してください。
