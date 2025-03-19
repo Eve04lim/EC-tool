@@ -1,0 +1,15 @@
+# products.txt - 商品URLリスト例
+# 一行に一つのURLを記載してください
+# #で始まる行はコメントとして無視されます
+
+# Amazon商品例
+https://amzn.asia/d/f1Lx3B1
+https://www.amazon.co.jp/%E3%82%AF%E3%83%AC%E3%82%AA%E3%83%AF%E3%83%B3%E3%83%87%E3%83%BCUV%E3%83%A2%E3%82%A4%E3%82%B9%E3%83%88-%EF%BC%881%E6%97%A5%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6-%E3%82%B3%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%88%E3%83%AC%E3%83%B3%E3%82%BA-%EF%BC%89%E3%80%90BC%E3%80%918-7-%E3%80%90PRW%E3%80%91-3-00/dp/B06Y28T78Z?pd_rd_w=krkbc&content-id=amzn1.sym.adba8629-5320-416c-ac16-3ebc01305f05&pf_rd_p=adba8629-5320-416c-ac16-3ebc01305f05&pf_rd_r=5EV125YS255ESFQ8SNW7&pd_rd_wg=SFIJ7&pd_rd_r=8445d90b-0a96-4b17-acbe-b23dde31825d&pd_rd_i=B06Y28T78Z&ref_=pd_hp_d_btf_okome1_0_B06Y28T78Z&th=1
+
+# 楽天市場商品例
+https://item.rakuten.co.jp/rakuten24/4901301348845/
+https://item.rakuten.co.jp/book/16311324/
+
+# Yahooショッピング商品例
+https://store.shopping.yahoo.co.jp/edion/4549292144970.html
+https://store.shopping.yahoo.co.jp/biccamera/4902370545623.html

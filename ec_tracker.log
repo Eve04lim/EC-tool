@@ -1,0 +1,627 @@
+2025-03-17 14:41:09,279 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 14:41:09,317 - database - INFO - Database tables created or already exist
+2025-03-17 14:41:09,317 - notifier - INFO - Notifier initialized
+2025-03-17 14:41:09,317 - __main__ - INFO - ECTracker initialized
+2025-03-17 14:41:09,320 - WDM - INFO - ====== WebDriver manager ======
+2025-03-17 14:41:10,041 - WDM - INFO - There is no [win32] chromedriver "latest" for browser google-chrome "134.0.6998" in cache
+2025-03-17 14:41:10,041 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-17 14:41:10,670 - scrapers - ERROR - Failed to setup Selenium: There is no such driver by url https://chromedriver.storage.googleapis.com/LATEST_RELEASE_134.0.6998
+2025-03-17 14:41:10,672 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B08MYWGW52: There is no such driver by url https://chromedriver.storage.googleapis.com/LATEST_RELEASE_134.0.6998
+2025-03-17 14:41:10,672 - database - INFO - Database connection closed
+2025-03-17 14:41:10,672 - __main__ - INFO - Database connection closed
+2025-03-17 14:46:48,106 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 14:46:48,106 - database - INFO - Database tables created or already exist
+2025-03-17 14:46:48,106 - notifier - INFO - Notifier initialized
+2025-03-17 14:46:48,106 - __main__ - INFO - ECTracker initialized
+2025-03-17 14:46:52,038 - scrapers - ERROR - Failed to setup Selenium: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x006D74D3+23139]
+	(No symbol) [0x0065FCA4]
+	(No symbol) [0x0053C2A3]
+	(No symbol) [0x0056FA8F]
+	(No symbol) [0x0056EB70]
+	(No symbol) [0x00569D93]
+	(No symbol) [0x005656C9]
+	(No symbol) [0x005A937D]
+	(No symbol) [0x005A8B6A]
+	(No symbol) [0x0059FC16]
+	(No symbol) [0x0057216C]
+	(No symbol) [0x005730FD]
+	GetHandleVerifier [0x0096BAA3+2727987]
+	GetHandleVerifier [0x009C476E+3091710]
+	GetHandleVerifier [0x009BCF52+3060962]
+	GetHandleVerifier [0x00771460+653808]
+	(No symbol) [0x00668E5D]
+	(No symbol) [0x00665A48]
+	(No symbol) [0x00665BE0]
+	(No symbol) [0x00658110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 14:46:52,038 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B08MYWGW52: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x006D74D3+23139]
+	(No symbol) [0x0065FCA4]
+	(No symbol) [0x0053C2A3]
+	(No symbol) [0x0056FA8F]
+	(No symbol) [0x0056EB70]
+	(No symbol) [0x00569D93]
+	(No symbol) [0x005656C9]
+	(No symbol) [0x005A937D]
+	(No symbol) [0x005A8B6A]
+	(No symbol) [0x0059FC16]
+	(No symbol) [0x0057216C]
+	(No symbol) [0x005730FD]
+	GetHandleVerifier [0x0096BAA3+2727987]
+	GetHandleVerifier [0x009C476E+3091710]
+	GetHandleVerifier [0x009BCF52+3060962]
+	GetHandleVerifier [0x00771460+653808]
+	(No symbol) [0x00668E5D]
+	(No symbol) [0x00665A48]
+	(No symbol) [0x00665BE0]
+	(No symbol) [0x00658110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 14:46:56,106 - database - INFO - Database connection closed
+2025-03-17 14:46:56,106 - __main__ - INFO - Database connection closed
+2025-03-17 15:00:28,496 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:00:28,512 - database - INFO - Database tables created or already exist
+2025-03-17 15:00:28,512 - notifier - INFO - Notifier initialized
+2025-03-17 15:00:28,512 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:00:32,250 - scrapers - ERROR - Failed to setup Selenium: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x011B74D3+23139]
+	(No symbol) [0x0113FCA4]
+	(No symbol) [0x0101C2A3]
+	(No symbol) [0x0104FA8F]
+	(No symbol) [0x0104EB70]
+	(No symbol) [0x01049D93]
+	(No symbol) [0x010456C9]
+	(No symbol) [0x0108937D]
+	(No symbol) [0x01088B6A]
+	(No symbol) [0x0107FC16]
+	(No symbol) [0x0105216C]
+	(No symbol) [0x010530FD]
+	GetHandleVerifier [0x0144BAA3+2727987]
+	GetHandleVerifier [0x014A476E+3091710]
+	GetHandleVerifier [0x0149CF52+3060962]
+	GetHandleVerifier [0x01251460+653808]
+	(No symbol) [0x01148E5D]
+	(No symbol) [0x01145A48]
+	(No symbol) [0x01145BE0]
+	(No symbol) [0x01138110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 15:00:32,250 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B08MYWGW52: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x011B74D3+23139]
+	(No symbol) [0x0113FCA4]
+	(No symbol) [0x0101C2A3]
+	(No symbol) [0x0104FA8F]
+	(No symbol) [0x0104EB70]
+	(No symbol) [0x01049D93]
+	(No symbol) [0x010456C9]
+	(No symbol) [0x0108937D]
+	(No symbol) [0x01088B6A]
+	(No symbol) [0x0107FC16]
+	(No symbol) [0x0105216C]
+	(No symbol) [0x010530FD]
+	GetHandleVerifier [0x0144BAA3+2727987]
+	GetHandleVerifier [0x014A476E+3091710]
+	GetHandleVerifier [0x0149CF52+3060962]
+	GetHandleVerifier [0x01251460+653808]
+	(No symbol) [0x01148E5D]
+	(No symbol) [0x01145A48]
+	(No symbol) [0x01145BE0]
+	(No symbol) [0x01138110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 15:00:36,359 - database - INFO - Database connection closed
+2025-03-17 15:00:36,359 - __main__ - INFO - Database connection closed
+2025-03-17 15:06:49,989 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:06:50,006 - database - INFO - Database tables created or already exist
+2025-03-17 15:06:50,006 - notifier - INFO - Notifier initialized
+2025-03-17 15:06:50,006 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:06:53,634 - scrapers - ERROR - Failed to setup Selenium: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x009674D3+23139]
+	(No symbol) [0x008EFCA4]
+	(No symbol) [0x007CC2A3]
+	(No symbol) [0x007FFA8F]
+	(No symbol) [0x007FEB70]
+	(No symbol) [0x007F9D93]
+	(No symbol) [0x007F56C9]
+	(No symbol) [0x0083937D]
+	(No symbol) [0x00838B6A]
+	(No symbol) [0x0082FC16]
+	(No symbol) [0x0080216C]
+	(No symbol) [0x008030FD]
+	GetHandleVerifier [0x00BFBAA3+2727987]
+	GetHandleVerifier [0x00C5476E+3091710]
+	GetHandleVerifier [0x00C4CF52+3060962]
+	GetHandleVerifier [0x00A01460+653808]
+	(No symbol) [0x008F8E5D]
+	(No symbol) [0x008F5A48]
+	(No symbol) [0x008F5BE0]
+	(No symbol) [0x008E8110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 15:06:53,634 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B08MYWGW52: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x009674D3+23139]
+	(No symbol) [0x008EFCA4]
+	(No symbol) [0x007CC2A3]
+	(No symbol) [0x007FFA8F]
+	(No symbol) [0x007FEB70]
+	(No symbol) [0x007F9D93]
+	(No symbol) [0x007F56C9]
+	(No symbol) [0x0083937D]
+	(No symbol) [0x00838B6A]
+	(No symbol) [0x0082FC16]
+	(No symbol) [0x0080216C]
+	(No symbol) [0x008030FD]
+	GetHandleVerifier [0x00BFBAA3+2727987]
+	GetHandleVerifier [0x00C5476E+3091710]
+	GetHandleVerifier [0x00C4CF52+3060962]
+	GetHandleVerifier [0x00A01460+653808]
+	(No symbol) [0x008F8E5D]
+	(No symbol) [0x008F5A48]
+	(No symbol) [0x008F5BE0]
+	(No symbol) [0x008E8110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 15:06:57,712 - database - INFO - Database connection closed
+2025-03-17 15:06:57,712 - __main__ - INFO - Database connection closed
+2025-03-17 15:10:35,894 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:10:35,894 - database - INFO - Database tables created or already exist
+2025-03-17 15:10:35,907 - notifier - INFO - Notifier initialized
+2025-03-17 15:10:35,907 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:10:39,511 - scrapers - ERROR - Failed to setup Selenium: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x010074D3+23139]
+	(No symbol) [0x00F8FCA4]
+	(No symbol) [0x00E6C2A3]
+	(No symbol) [0x00E9FA8F]
+	(No symbol) [0x00E9EB70]
+	(No symbol) [0x00E99D93]
+	(No symbol) [0x00E956C9]
+	(No symbol) [0x00ED937D]
+	(No symbol) [0x00ED8B6A]
+	(No symbol) [0x00ECFC16]
+	(No symbol) [0x00EA216C]
+	(No symbol) [0x00EA30FD]
+	GetHandleVerifier [0x0129BAA3+2727987]
+	GetHandleVerifier [0x012F476E+3091710]
+	GetHandleVerifier [0x012ECF52+3060962]
+	GetHandleVerifier [0x010A1460+653808]
+	(No symbol) [0x00F98E5D]
+	(No symbol) [0x00F95A48]
+	(No symbol) [0x00F95BE0]
+	(No symbol) [0x00F88110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 15:10:39,511 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B08MYWGW52: Message: session not created: This version of ChromeDriver only supports Chrome version 130
+Current browser version is 134.0.6998.89 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x010074D3+23139]
+	(No symbol) [0x00F8FCA4]
+	(No symbol) [0x00E6C2A3]
+	(No symbol) [0x00E9FA8F]
+	(No symbol) [0x00E9EB70]
+	(No symbol) [0x00E99D93]
+	(No symbol) [0x00E956C9]
+	(No symbol) [0x00ED937D]
+	(No symbol) [0x00ED8B6A]
+	(No symbol) [0x00ECFC16]
+	(No symbol) [0x00EA216C]
+	(No symbol) [0x00EA30FD]
+	GetHandleVerifier [0x0129BAA3+2727987]
+	GetHandleVerifier [0x012F476E+3091710]
+	GetHandleVerifier [0x012ECF52+3060962]
+	GetHandleVerifier [0x010A1460+653808]
+	(No symbol) [0x00F98E5D]
+	(No symbol) [0x00F95A48]
+	(No symbol) [0x00F95BE0]
+	(No symbol) [0x00F88110]
+	BaseThreadInitThunk [0x77445D49+25]
+	RtlInitializeExceptionChain [0x77D2CE3B+107]
+	RtlGetAppContainerNamedObjectPath [0x77D2CDC1+561]
+
+2025-03-17 15:10:43,593 - database - INFO - Database connection closed
+2025-03-17 15:10:43,593 - __main__ - INFO - Database connection closed
+2025-03-17 15:12:18,110 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:12:18,110 - database - INFO - Database tables created or already exist
+2025-03-17 15:12:18,110 - notifier - INFO - Notifier initialized
+2025-03-17 15:12:18,110 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:12:19,522 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:12:19,525 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:12:19,525 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:12:26,201 - scrapers - WARNING - Could not find product name
+2025-03-17 15:12:26,201 - scrapers - WARNING - Could not find product image
+2025-03-17 15:12:32,409 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:12:32,409 - __main__ - ERROR - Failed to scrape product data from: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:12:32,409 - database - INFO - Database connection closed
+2025-03-17 15:12:32,409 - __main__ - INFO - Database connection closed
+2025-03-17 15:18:55,515 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:18:55,519 - database - INFO - Database tables created or already exist
+2025-03-17 15:18:55,521 - notifier - INFO - Notifier initialized
+2025-03-17 15:18:55,521 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:18:57,062 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:18:57,062 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:18:57,064 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:19:03,652 - scrapers - WARNING - Could not find product name
+2025-03-17 15:19:03,652 - scrapers - WARNING - Could not find product image
+2025-03-17 15:19:09,893 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:19:09,893 - __main__ - ERROR - Failed to scrape product data from: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:19:09,896 - database - INFO - Database connection closed
+2025-03-17 15:19:09,896 - __main__ - INFO - Database connection closed
+2025-03-17 15:19:23,164 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:19:23,164 - database - INFO - Database tables created or already exist
+2025-03-17 15:19:23,164 - notifier - INFO - Notifier initialized
+2025-03-17 15:19:23,164 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:19:23,164 - __main__ - ERROR - Error adding product https://amzn.asia/d/f1Lx3B1: Unsupported URL: https://amzn.asia/d/f1Lx3B1
+2025-03-17 15:19:23,164 - database - INFO - Database connection closed
+2025-03-17 15:19:23,164 - __main__ - INFO - Database connection closed
+2025-03-17 15:24:25,407 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:24:25,412 - database - INFO - Database tables created or already exist
+2025-03-17 15:24:25,412 - notifier - INFO - Notifier initialized
+2025-03-17 15:24:25,412 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:24:26,852 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:24:26,853 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:24:26,853 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:24:49,992 - scrapers - WARNING - Timeout waiting for product title to load
+2025-03-17 15:24:49,995 - scrapers - WARNING - Could not find product name
+2025-03-17 15:24:49,998 - scrapers - WARNING - Could not find product image
+2025-03-17 15:24:56,316 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:24:56,316 - __main__ - ERROR - Failed to scrape product data from: https://www.amazon.co.jp/dp/B08MYWGW52
+2025-03-17 15:24:56,316 - database - INFO - Database connection closed
+2025-03-17 15:24:56,316 - __main__ - INFO - Database connection closed
+2025-03-17 15:26:20,813 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:26:20,813 - database - INFO - Database tables created or already exist
+2025-03-17 15:26:20,813 - notifier - INFO - Notifier initialized
+2025-03-17 15:26:20,813 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:26:22,543 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:26:22,543 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 15:26:22,543 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 15:26:41,997 - scrapers - WARNING - Could not find review information
+2025-03-17 15:26:48,287 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:26:48,303 - database - INFO - Added new product: by Amazon 秋田県産 あきたこまち 無洗米 5kg 令和6年産 (ID: 1)
+2025-03-17 15:26:48,321 - __main__ - INFO - Added new product: by Amazon 秋田県産 あきたこまち 無洗米 5kg 令和6年産 (ID: 1)
+2025-03-17 15:26:48,322 - database - INFO - Database connection closed
+2025-03-17 15:26:48,323 - __main__ - INFO - Database connection closed
+2025-03-17 15:33:26,836 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:33:26,836 - database - INFO - Database tables created or already exist
+2025-03-17 15:33:26,836 - notifier - INFO - Notifier initialized
+2025-03-17 15:33:26,836 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:33:34,676 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:33:34,677 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 15:33:34,677 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 15:33:53,925 - scrapers - WARNING - Could not find review information
+2025-03-17 15:34:00,274 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:34:00,290 - __main__ - INFO - Updated product 1: by Amazon 秋田県産 あきたこまち 無洗米 5kg 令和6年産
+2025-03-17 15:34:00,291 - __main__ - INFO - Updated 1/1 products
+2025-03-17 15:34:00,291 - database - INFO - Database connection closed
+2025-03-17 15:34:00,291 - __main__ - INFO - Database connection closed
+2025-03-17 15:39:03,365 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:39:03,365 - database - INFO - Database tables created or already exist
+2025-03-17 15:39:03,365 - notifier - INFO - Notifier initialized
+2025-03-17 15:39:03,365 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:39:04,663 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:39:04,663 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-17 15:39:04,663 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-17 15:39:21,857 - scrapers - WARNING - Could not find review information
+2025-03-17 15:39:29,256 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:39:29,270 - database - INFO - Added new product: 【超大サイズ・12本骨】 折りたたみ傘 ワンタッチ自動開閉 メンズ傘 大きい 逆折り式 折り畳み傘 風に強い テフロン加工 耐風撥水 丈夫耐久 折りたたみ日傘 遮光遮熱 UVカット 晴雨兼用傘 梅雨対策 台風対応 豪雨対応 メンズ レディース 収納ポーチ付き (ID: 2)
+2025-03-17 15:39:29,293 - __main__ - INFO - Added new product: 【超大サイズ・12本骨】 折りたたみ傘 ワンタッチ自動開閉 メンズ傘 大きい 逆折り式 折り畳み傘 風に強い テフロン加工 耐風撥水 丈夫耐久 折りたたみ日傘 遮光遮熱 UVカット 晴雨兼用傘 梅雨対策 台風対応 豪雨対応 メンズ レディース 収納ポーチ付き (ID: 2)
+2025-03-17 15:39:29,294 - database - INFO - Database connection closed
+2025-03-17 15:39:29,295 - __main__ - INFO - Database connection closed
+2025-03-17 15:39:34,519 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:39:34,519 - database - INFO - Database tables created or already exist
+2025-03-17 15:39:34,519 - notifier - INFO - Notifier initialized
+2025-03-17 15:39:34,519 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:39:35,803 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:39:35,804 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-17 15:39:35,804 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-17 15:39:56,070 - scrapers - WARNING - Could not find review information
+2025-03-17 15:40:02,304 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:40:02,318 - database - INFO - Added new product: [アサヒ] 上履き カラーバレー 日本製 ハイスクールフロアーVK キッズ (ID: 3)
+2025-03-17 15:40:02,339 - __main__ - INFO - Added new product: [アサヒ] 上履き カラーバレー 日本製 ハイスクールフロアーVK キッズ (ID: 3)
+2025-03-17 15:40:02,342 - database - INFO - Database connection closed
+2025-03-17 15:40:02,342 - __main__ - INFO - Database connection closed
+2025-03-17 15:40:06,972 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:40:06,972 - database - INFO - Database tables created or already exist
+2025-03-17 15:40:06,972 - notifier - INFO - Notifier initialized
+2025-03-17 15:40:06,972 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:40:08,400 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:40:08,401 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-17 15:40:08,401 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-17 15:40:27,670 - scrapers - WARNING - Could not find review information
+2025-03-17 15:40:33,996 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:40:34,014 - database - INFO - Added new product: [Dr.CLENZ] 【徹底防水防汚 × 持続力のハイブリッド仕様】 防水スプレー 440ml 靴 スニーカー 革製バッグ等 幅広く使用可 [魔法の防水スプレー] (ID: 4)
+2025-03-17 15:40:34,028 - __main__ - INFO - Added new product: [Dr.CLENZ] 【徹底防水防汚 × 持続力のハイブリッド仕様】 防水スプレー 440ml 靴 スニーカー 革製バッグ等 幅広く使用可 [魔法の防水スプレー] (ID: 4)
+2025-03-17 15:40:34,029 - database - INFO - Database connection closed
+2025-03-17 15:40:34,029 - __main__ - INFO - Database connection closed
+2025-03-17 15:40:41,050 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:40:41,050 - database - INFO - Database tables created or already exist
+2025-03-17 15:40:41,050 - notifier - INFO - Notifier initialized
+2025-03-17 15:40:41,050 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:40:42,467 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:40:42,467 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-17 15:40:42,467 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-17 15:41:03,017 - scrapers - WARNING - Could not find review information
+2025-03-17 15:41:09,316 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:41:09,330 - database - INFO - Added new product: [ＷＩＬＬ　ＣＬＥＮＳ] シューズパウダー 日本製 無香料 シューケアキット 靴 消臭 パウダー (1本) (ID: 5)
+2025-03-17 15:41:09,349 - __main__ - INFO - Added new product: [ＷＩＬＬ　ＣＬＥＮＳ] シューズパウダー 日本製 無香料 シューケアキット 靴 消臭 パウダー (1本) (ID: 5)
+2025-03-17 15:41:09,349 - database - INFO - Database connection closed
+2025-03-17 15:41:09,349 - __main__ - INFO - Database connection closed
+2025-03-17 15:41:15,723 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:41:15,724 - database - INFO - Database tables created or already exist
+2025-03-17 15:41:15,724 - notifier - INFO - Notifier initialized
+2025-03-17 15:41:15,724 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:41:17,094 - scrapers - INFO - Selenium WebDriver initialized
+2025-03-17 15:41:17,094 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-17 15:41:17,094 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-17 15:41:36,097 - scrapers - WARNING - Could not find regular price
+2025-03-17 15:41:36,141 - scrapers - WARNING - Could not find review information
+2025-03-17 15:41:42,450 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:41:42,458 - database - INFO - Added new product: KIOXIA(キオクシア) 旧東芝メモリ microSD 128GB UHS-I Class10 (最大読出速度100MB/s) Nintendo Switch動作確認済 国内サポート正規品 メーカー保証5年 KLMEA128G (ID: 6)
+2025-03-17 15:41:42,471 - __main__ - INFO - Added new product: KIOXIA(キオクシア) 旧東芝メモリ microSD 128GB UHS-I Class10 (最大読出速度100MB/s) Nintendo Switch動作確認済 国内サポート正規品 メーカー保証5年 KLMEA128G (ID: 6)
+2025-03-17 15:41:42,471 - database - INFO - Database connection closed
+2025-03-17 15:41:42,472 - __main__ - INFO - Database connection closed
+2025-03-17 15:47:55,713 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 15:47:55,727 - database - INFO - Database tables created or already exist
+2025-03-17 15:47:55,727 - notifier - INFO - Notifier initialized
+2025-03-17 15:47:55,727 - __main__ - INFO - ECTracker initialized
+2025-03-17 15:47:56,955 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 15:47:56,955 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-17 15:47:56,956 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-17 15:48:16,282 - scrapers - WARNING - Could not find review information
+2025-03-17 15:48:22,596 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 15:48:22,611 - database - INFO - Added new product: Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー (ID: 7)
+2025-03-17 15:48:22,627 - __main__ - INFO - Added new product: Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー (ID: 7)
+2025-03-17 15:48:22,627 - database - INFO - Database connection closed
+2025-03-17 15:48:22,627 - __main__ - INFO - Database connection closed
+2025-03-17 16:28:52,511 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 16:28:52,511 - database - INFO - Database tables created or already exist
+2025-03-17 16:28:52,511 - notifier - INFO - Notifier initialized
+2025-03-17 16:38:18,352 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 16:38:18,356 - database - INFO - Database tables created or already exist
+2025-03-17 16:38:18,357 - notifier - INFO - Notifier initialized
+2025-03-17 16:38:34,949 - google_auth_oauthlib.flow - INFO - "GET /?state=Wl29ENird0isyupxXKKJria37meDdl&code=4/0AQSTgQGtE1NkvWZioBP-arfq4i99eW9Le88hUkUm1uL8u7xaVl7kTjoV3-QQtahw7wQjZA&scope=https://www.googleapis.com/auth/spreadsheets HTTP/1.1" 200 65
+2025-03-17 16:38:35,605 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 16:38:35,704 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 16:38:35,707 - __main__ - INFO - ECTracker initialized
+2025-03-17 16:38:35,713 - gsheets - ERROR - Failed to export products: 'str' object has no attribute 'strftime'
+2025-03-17 16:38:35,714 - gsheets - ERROR - Failed to export price history: 'str' object has no attribute 'strftime'
+2025-03-17 16:38:35,716 - database - INFO - Database connection closed
+2025-03-17 16:38:35,718 - __main__ - INFO - Database connection closed
+2025-03-17 16:42:12,582 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 16:42:12,586 - database - INFO - Database tables created or already exist
+2025-03-17 16:42:12,587 - notifier - INFO - Notifier initialized
+2025-03-17 16:42:12,591 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 16:42:12,595 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 16:42:12,595 - __main__ - INFO - ECTracker initialized
+2025-03-17 16:42:21,627 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:42:21,628 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 16:42:21,628 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 16:42:39,356 - scrapers - WARNING - Could not find review information
+2025-03-17 16:42:45,637 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:42:45,667 - __main__ - INFO - Updated product 1: by Amazon 秋田県産 あきたこまち 無洗米 5kg 令和6年産
+2025-03-17 16:42:54,192 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:42:54,193 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-17 16:42:54,193 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-17 16:43:11,585 - scrapers - WARNING - Could not find review information
+2025-03-17 16:43:17,835 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:43:17,854 - __main__ - INFO - Updated product 2: 【超大サイズ・12本骨】 折りたたみ傘 ワンタッチ自動開閉 メンズ傘 大きい 逆折り式 折り畳み傘 風に強い テフロン加工 耐風撥水 丈夫耐久 折りたたみ日傘 遮光遮熱 UVカット 晴雨兼用傘 梅雨対策 台風対応 豪雨対応 メンズ レディース 収納ポーチ付き
+2025-03-17 16:43:26,974 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:43:26,974 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-17 16:43:26,975 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-17 16:43:43,809 - scrapers - WARNING - Could not find review information
+2025-03-17 16:43:50,112 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:43:50,135 - __main__ - INFO - Updated product 3: [アサヒ] 上履き カラーバレー 日本製 ハイスクールフロアーVK キッズ
+2025-03-17 16:43:58,578 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:43:58,578 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-17 16:43:58,579 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-17 16:44:15,573 - scrapers - WARNING - Could not find review information
+2025-03-17 16:44:21,872 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:44:21,921 - __main__ - INFO - Updated product 4: [Dr.CLENZ] 【徹底防水防汚 × 持続力のハイブリッド仕様】 防水スプレー 440ml 靴 スニーカー 革製バッグ等 幅広く使用可 [魔法の防水スプレー]
+2025-03-17 16:44:30,194 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:44:30,195 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-17 16:44:30,195 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-17 16:44:48,753 - scrapers - WARNING - Could not find review information
+2025-03-17 16:44:55,065 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:44:55,091 - __main__ - INFO - Updated product 5: [ＷＩＬＬ　ＣＬＥＮＳ] シューズパウダー 日本製 無香料 シューケアキット 靴 消臭 パウダー (1本)
+2025-03-17 16:45:03,058 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:45:03,059 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-17 16:45:03,060 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-17 16:45:23,802 - scrapers - WARNING - Could not find regular price
+2025-03-17 16:45:23,851 - scrapers - WARNING - Could not find review information
+2025-03-17 16:45:30,440 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:45:30,458 - __main__ - INFO - Updated product 6: KIOXIA(キオクシア) 旧東芝メモリ microSD 128GB UHS-I Class10 (最大読出速度100MB/s) Nintendo Switch動作確認済 国内サポート正規品 メーカー保証5年 KLMEA128G
+2025-03-17 16:45:38,093 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 16:45:38,094 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-17 16:45:38,094 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-17 16:45:57,684 - scrapers - WARNING - Could not find review information
+2025-03-17 16:46:03,988 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 16:46:03,997 - __main__ - INFO - Updated product 7: Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー
+2025-03-17 16:46:03,997 - __main__ - INFO - Updated 7/7 products
+2025-03-17 16:46:03,998 - gsheets - ERROR - Failed to export products: 'str' object has no attribute 'strftime'
+2025-03-17 16:46:04,003 - gsheets - ERROR - Failed to export price history: 'str' object has no attribute 'strftime'
+2025-03-17 16:46:04,007 - database - INFO - Database connection closed
+2025-03-17 16:46:04,007 - __main__ - INFO - Database connection closed
+2025-03-17 16:46:06,629 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 16:46:06,631 - database - INFO - Database tables created or already exist
+2025-03-17 16:46:06,631 - notifier - INFO - Notifier initialized
+2025-03-17 16:46:06,635 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 16:46:06,639 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 16:46:06,640 - __main__ - INFO - ECTracker initialized
+2025-03-17 16:46:06,640 - gsheets - ERROR - Failed to export products: 'str' object has no attribute 'strftime'
+2025-03-17 16:46:06,641 - gsheets - ERROR - Failed to export price history: 'str' object has no attribute 'strftime'
+2025-03-17 16:46:06,641 - database - INFO - Database connection closed
+2025-03-17 16:46:06,641 - __main__ - INFO - Database connection closed
+2025-03-17 17:17:54,415 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 17:17:54,420 - database - INFO - Database tables created or already exist
+2025-03-17 17:17:54,420 - notifier - INFO - Notifier initialized
+2025-03-17 17:17:54,425 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 17:17:54,429 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 17:17:54,430 - __main__ - INFO - ECTracker initialized
+2025-03-17 17:18:03,858 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:18:03,858 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 17:18:03,858 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-17 17:18:24,063 - scrapers - WARNING - Could not find review information
+2025-03-17 17:18:30,337 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:18:30,363 - __main__ - INFO - Updated product 1: by Amazon 秋田県産 あきたこまち 無洗米 5kg 令和6年産
+2025-03-17 17:18:38,697 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:18:38,698 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-17 17:18:38,698 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-17 17:18:57,147 - scrapers - WARNING - Could not find review information
+2025-03-17 17:19:03,427 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:19:03,441 - __main__ - INFO - Updated product 2: 【超大サイズ・12本骨】 折りたたみ傘 ワンタッチ自動開閉 メンズ傘 大きい 逆折り式 折り畳み傘 風に強い テフロン加工 耐風撥水 丈夫耐久 折りたたみ日傘 遮光遮熱 UVカット 晴雨兼用傘 梅雨対策 台風対応 豪雨対応 メンズ レディース 収納ポーチ付き
+2025-03-17 17:19:12,323 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:19:12,323 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-17 17:19:12,324 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-17 17:19:31,178 - scrapers - WARNING - Could not find review information
+2025-03-17 17:19:37,464 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:19:37,480 - __main__ - INFO - Updated product 3: [アサヒ] 上履き カラーバレー 日本製 ハイスクールフロアーVK キッズ
+2025-03-17 17:19:45,253 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:19:45,254 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-17 17:19:45,254 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-17 17:20:04,810 - scrapers - WARNING - Could not find review information
+2025-03-17 17:20:11,077 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:20:11,103 - __main__ - INFO - Updated product 4: [Dr.CLENZ] 【徹底防水防汚 × 持続力のハイブリッド仕様】 防水スプレー 440ml 靴 スニーカー 革製バッグ等 幅広く使用可 [魔法の防水スプレー]
+2025-03-17 17:20:18,765 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:20:18,765 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-17 17:20:18,765 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-17 17:20:36,439 - scrapers - WARNING - Could not find review information
+2025-03-17 17:20:42,741 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:20:42,753 - __main__ - INFO - Updated product 5: [ＷＩＬＬ　ＣＬＥＮＳ] シューズパウダー 日本製 無香料 シューケアキット 靴 消臭 パウダー (1本)
+2025-03-17 17:20:50,873 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:20:50,873 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-17 17:20:50,874 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-17 17:21:07,540 - scrapers - WARNING - Could not find review information
+2025-03-17 17:21:13,820 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:21:13,833 - __main__ - INFO - Updated product 6: KIOXIA(キオクシア) 旧東芝メモリ microSD 128GB UHS-I Class10 (最大読出速度100MB/s) Nintendo Switch動作確認済 国内サポート正規品 メーカー保証5年 KLMEA128G
+2025-03-17 17:21:21,809 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-17 17:21:21,810 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-17 17:21:21,810 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-17 17:21:42,776 - scrapers - WARNING - Could not find review information
+2025-03-17 17:21:49,110 - scrapers - INFO - Selenium WebDriver closed
+2025-03-17 17:21:49,132 - __main__ - INFO - Updated product 7: Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー
+2025-03-17 17:21:49,134 - __main__ - INFO - Updated 7/7 products
+2025-03-17 17:21:49,135 - gsheets - ERROR - Failed to export products: 'str' object has no attribute 'strftime'
+2025-03-17 17:21:49,146 - gsheets - ERROR - Failed to export price history: 'str' object has no attribute 'strftime'
+2025-03-17 17:21:49,151 - database - INFO - Database connection closed
+2025-03-17 17:21:49,152 - __main__ - INFO - Database connection closed
+2025-03-17 17:24:34,690 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 17:24:34,691 - database - INFO - Database tables created or already exist
+2025-03-17 17:24:34,691 - notifier - INFO - Notifier initialized
+2025-03-17 17:24:34,695 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 17:24:34,699 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 17:24:34,699 - __main__ - INFO - ECTracker initialized
+2025-03-17 17:24:34,700 - gsheets - ERROR - Failed to export products: 'str' object has no attribute 'strftime'
+2025-03-17 17:24:34,701 - gsheets - ERROR - Failed to export price history: 'str' object has no attribute 'strftime'
+2025-03-17 17:24:34,702 - database - INFO - Database connection closed
+2025-03-17 17:24:34,702 - __main__ - INFO - Database connection closed
+2025-03-17 17:27:35,695 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 17:27:35,700 - database - INFO - Database tables created or already exist
+2025-03-17 17:27:35,700 - notifier - INFO - Notifier initialized
+2025-03-17 17:27:35,706 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 17:27:35,710 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 17:27:35,710 - __main__ - INFO - ECTracker initialized
+2025-03-17 17:27:39,376 - gsheets - ERROR - Failed to export products: <HttpError 400 when requesting https://sheets.googleapis.com/v4/spreadsheets/1mbG5t2XwCF9hlo8aqmrSIyQcj66ffnmK0VUNujOjIOA/values/Products%21A1?valueInputOption=RAW&alt=json returned "Invalid JSON payload received. Unexpected token.
+0D9P51K76", 7379.0, NaN, "\u5728\u5eab\u
+                    ^". Details: "Invalid JSON payload received. Unexpected token.
+0D9P51K76", 7379.0, NaN, "\u5728\u5eab\u
+                    ^">
+2025-03-17 17:27:40,417 - gsheets - ERROR - Failed to export price history: Object of type Timestamp is not JSON serializable
+2025-03-17 17:27:40,419 - database - INFO - Database connection closed
+2025-03-17 17:27:40,419 - __main__ - INFO - Database connection closed
+2025-03-17 17:29:30,761 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-17 17:29:30,763 - database - INFO - Database tables created or already exist
+2025-03-17 17:29:30,763 - notifier - INFO - Notifier initialized
+2025-03-17 17:29:30,767 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-17 17:29:30,769 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-17 17:29:30,771 - __main__ - INFO - ECTracker initialized
+2025-03-17 17:29:32,291 - gsheets - INFO - Updated sheet: Products with 7 rows
+2025-03-17 17:29:32,291 - gsheets - INFO - Exported 7 products to Google Sheets
+2025-03-17 17:29:33,277 - gsheets - INFO - Updated sheet: PriceHistory with 22 rows
+2025-03-17 17:29:33,278 - gsheets - INFO - Exported price history for 7 products to Google Sheets
+2025-03-17 17:29:33,280 - database - INFO - Database connection closed
+2025-03-17 17:29:33,281 - __main__ - INFO - Database connection closed
+2025-03-18 23:23:06,623 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-18 23:23:06,624 - database - INFO - Database tables created or already exist
+2025-03-18 23:23:06,624 - notifier - INFO - Notifier initialized
+2025-03-18 23:23:07,155 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-18 23:23:07,194 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-18 23:23:07,194 - __main__ - INFO - ECTracker initialized
+2025-03-18 23:23:16,347 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:23:16,348 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-18 23:23:16,348 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-18 23:23:34,334 - scrapers - WARNING - Could not find review information
+2025-03-18 23:23:40,601 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:23:40,655 - __main__ - INFO - Updated product 1: by Amazon 秋田県産 あきたこまち 無洗米 5kg 令和6年産
+2025-03-18 23:23:49,510 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:23:49,510 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-18 23:23:49,510 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0D9P51K76
+2025-03-18 23:24:06,795 - scrapers - WARNING - Could not find review information
+2025-03-18 23:24:13,051 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:24:13,060 - __main__ - INFO - Updated product 2: 【超大サイズ・12本骨】 折りたたみ傘 ワンタッチ自動開閉 メンズ傘 大きい 逆折り式 折り畳み傘 風に強い テフロン加工 耐風撥水 丈夫耐久 折りたたみ日傘 遮光遮熱 UVカット 晴雨兼用傘 梅雨対策 台風対応 豪雨対応 メンズ レディース 収納ポーチ付き
+2025-03-18 23:24:21,289 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:24:21,289 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-18 23:24:21,289 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B01HLYD1CQ
+2025-03-18 23:24:36,905 - scrapers - WARNING - Could not find review information
+2025-03-18 23:24:43,175 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:24:43,189 - __main__ - INFO - Updated product 3: [アサヒ] 上履き カラーバレー 日本製 ハイスクールフロアーVK キッズ
+2025-03-18 23:24:51,837 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:24:51,837 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-18 23:24:51,837 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CPW2JF37
+2025-03-18 23:25:08,520 - scrapers - WARNING - Could not find regular price
+2025-03-18 23:25:08,553 - scrapers - WARNING - Could not find review information
+2025-03-18 23:25:14,812 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:25:14,833 - __main__ - INFO - Updated product 4: [Dr.CLENZ] 【徹底防水防汚 × 持続力のハイブリッド仕様】 防水スプレー 440ml 靴 スニーカー 革製バッグ等 幅広く使用可 [魔法の防水スプレー]
+2025-03-18 23:25:22,972 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:25:22,972 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-18 23:25:22,972 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08VS1XLR4
+2025-03-18 23:25:40,651 - scrapers - WARNING - Could not find review information
+2025-03-18 23:25:46,936 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:25:46,948 - __main__ - INFO - Updated product 5: [ＷＩＬＬ　ＣＬＥＮＳ] シューズパウダー 日本製 無香料 シューケアキット 靴 消臭 パウダー (1本)
+2025-03-18 23:25:55,497 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:25:55,497 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-18 23:25:55,497 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08PTPTMH5
+2025-03-18 23:26:10,895 - scrapers - WARNING - Could not find regular price
+2025-03-18 23:26:10,915 - scrapers - WARNING - Could not find review information
+2025-03-18 23:26:17,185 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:26:17,199 - __main__ - INFO - Updated product 6: KIOXIA(キオクシア) 旧東芝メモリ microSD 128GB UHS-I Class10 (最大読出速度100MB/s) Nintendo Switch動作確認済 国内サポート正規品 メーカー保証5年 KLMEA128G
+2025-03-18 23:26:24,637 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-18 23:26:24,637 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-18 23:26:24,637 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-18 23:26:51,458 - scrapers - WARNING - Could not find review information
+2025-03-18 23:26:57,752 - scrapers - INFO - Selenium WebDriver closed
+2025-03-18 23:26:57,766 - __main__ - INFO - Updated product 7: Amazon Fire TV Stick HD | 大画面でフルHDの楽しさを簡単に | ストリーミングメディアプレイヤー
+2025-03-18 23:26:57,766 - __main__ - INFO - Updated 7/7 products
+2025-03-18 23:27:00,211 - gsheets - INFO - Updated sheet: Products with 7 rows
+2025-03-18 23:27:00,211 - gsheets - INFO - Exported 7 products to Google Sheets
+2025-03-18 23:27:01,245 - gsheets - INFO - Updated sheet: PriceHistory with 29 rows
+2025-03-18 23:27:01,245 - gsheets - INFO - Exported price history for 7 products to Google Sheets
+2025-03-18 23:27:01,250 - database - INFO - Database connection closed
+2025-03-18 23:27:01,251 - __main__ - INFO - Database connection closed
