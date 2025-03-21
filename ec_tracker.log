@@ -926,3 +926,19 @@ DETAIL:  Failing row contains (null, by Amazon 秋田県産 あきたこまち 無洗米 5kg 
 2025-03-21 20:40:46,096 - gsheets - INFO - Exported price history for 1 products to Google Sheets
 2025-03-21 20:40:46,099 - database - INFO - Database connection closed
 2025-03-21 20:40:46,099 - __main__ - INFO - Database connection closed
+2025-03-21 20:54:31,031 - database - INFO - Connected to postgresql database
+2025-03-21 20:54:31,149 - database - INFO - Database tables created or already exist
+2025-03-21 20:54:31,150 - notifier - INFO - Notifier initialized
+2025-03-21 20:54:31,680 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 20:54:31,732 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 20:54:31,732 - __main__ - INFO - ECTracker initialized
+2025-03-21 20:54:33,352 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-21 20:54:33,352 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0DP41614X
+2025-03-21 20:54:33,352 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0DP41614X
+2025-03-21 20:54:52,170 - scrapers - WARNING - Could not find review information
+2025-03-21 20:54:58,423 - scrapers - INFO - Selenium WebDriver closed
+2025-03-21 20:54:58,487 - database - INFO - Added new product: イヤホン bluetooth ワイヤレスイヤホン 48時間の再生時間 重低音 LEDディスプレイ表示 小型/軽量 IPX7防水 ブルートゥース 接続瞬時 Hi-Fi ブルートゥース イヤホン Type-C 急速充電 ぶるーとぅーすイヤホン iPhone/Android/Pad適用 スポーツ/通勤/通学/WEB会議 (ホワイト) (ID: 2)
+2025-03-21 20:54:58,552 - database - INFO - Added price history for product 2
+2025-03-21 20:54:58,552 - __main__ - INFO - Added new product: イヤホン bluetooth ワイヤレスイヤホン 48時間の再生時間 重低音 LEDディスプレイ表示 小型/軽量 IPX7防水 ブルートゥース 接続瞬時 Hi-Fi ブルートゥース イヤホン Type-C 急速充電 ぶるーとぅーすイヤホン iPhone/Android/Pad適用 スポーツ/通勤/通学/WEB会議 (ホワイト) (ID: 2)
+2025-03-21 20:54:58,559 - database - INFO - Database connection closed
+2025-03-21 20:54:58,559 - __main__ - INFO - Database connection closed

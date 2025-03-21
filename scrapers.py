@@ -1,5 +1,6 @@
 # scrapers.py - ECサイトスクレイピングモジュール
 import logging
+import os
 import time
 import random
 import requests
@@ -35,36 +36,36 @@ class BaseScraper(ABC):
         """Seleniumの設定"""
         try:
             chrome_options = Options()
-            # ヘッドレスモードを有効化
-            chrome_options.add_argument("--headless=new")
+            chrome_options.add_argument("--headless")
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
-            # より一般的なユーザーエージェントに変更
-            chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
-            
-            # ボット検出回避のための追加設定
+            chrome_options.add_argument("--disable-gpu")
             chrome_options.add_argument("--disable-blink-features=AutomationControlled")
             chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
             chrome_options.add_experimental_option("useAutomationExtension", False)
-            
+
             if self.proxy:
                 chrome_options.add_argument(f"--proxy-server={self.proxy}")
-            
-            # 指定されたパスのChromeドライバーを使用
-            service = Service("C:\\chromedriver\\chromedriver.exe")
-            
+
+            # ✅ Heroku環境なら /usr/bin を使う
+            if os.environ.get("DYNO"):
+                chrome_options.binary_location = "/usr/bin/chromium-browser"
+                driver_path = "/usr/bin/chromedriver"
+            else:
+                # ローカル用
+                driver_path = "C:\\chromedriver\\chromedriver.exe"
+
+            service = Service(driver_path)
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
-            # WebDriverフラグを偽装
             self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-            
             self.driver.set_page_load_timeout(SELENIUM_TIMEOUT)
-            # 一般的なウィンドウサイズに設定
             self.driver.set_window_size(1366, 768)
-            
+
             logger.info("Selenium WebDriver initialized in headless mode")
         except Exception as e:
             logger.error(f"Failed to setup Selenium: {e}")
             raise
+
     
     
     def _get_page_with_requests(self, url):
