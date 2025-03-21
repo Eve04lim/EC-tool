@@ -625,3 +625,202 @@ Stacktrace:
 2025-03-18 23:27:01,245 - gsheets - INFO - Exported price history for 7 products to Google Sheets
 2025-03-18 23:27:01,250 - database - INFO - Database connection closed
 2025-03-18 23:27:01,251 - __main__ - INFO - Database connection closed
+2025-03-19 22:33:16,841 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:33:16,841 - database - INFO - Database tables created or already exist
+2025-03-19 22:33:16,841 - notifier - INFO - Notifier initialized
+2025-03-19 22:33:17,944 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:33:17,991 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:33:17,991 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:33:19,417 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:33:19,420 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-19 22:33:19,420 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CQN6FYLN
+2025-03-19 22:33:43,500 - scrapers - WARNING - Could not find regular price
+2025-03-19 22:33:43,557 - scrapers - WARNING - Could not find review information
+2025-03-19 22:33:50,136 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:33:50,138 - database - ERROR - Failed to add product: UNIQUE constraint failed: products.url
+2025-03-19 22:33:50,138 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B0CQN6FYLN: UNIQUE constraint failed: products.url
+2025-03-19 22:33:50,138 - database - INFO - Database connection closed
+2025-03-19 22:33:50,138 - __main__ - INFO - Database connection closed
+2025-03-19 22:33:56,176 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:33:56,176 - database - INFO - Database tables created or already exist
+2025-03-19 22:33:56,176 - notifier - INFO - Notifier initialized
+2025-03-19 22:33:56,182 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:33:56,190 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:33:56,191 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:33:57,695 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:33:57,695 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00NTCH52W
+2025-03-19 22:33:57,695 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00NTCH52W
+2025-03-19 22:34:17,601 - scrapers - WARNING - Could not find regular price
+2025-03-19 22:34:17,644 - scrapers - WARNING - Could not find review information
+2025-03-19 22:34:23,981 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:34:23,993 - database - INFO - Added new product: Amazonベーシック 乾電池 単3形 単三電池 アルカリ 保存期限10年 20個セット 1.5V 液漏れ防止 (ID: 8)
+2025-03-19 22:34:24,031 - __main__ - INFO - Added new product: Amazonベーシック 乾電池 単3形 単三電池 アルカリ 保存期限10年 20個セット 1.5V 液漏れ防止 (ID: 8)
+2025-03-19 22:34:24,031 - database - INFO - Database connection closed
+2025-03-19 22:34:24,031 - __main__ - INFO - Database connection closed
+2025-03-19 22:34:30,512 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:34:30,512 - database - INFO - Database tables created or already exist
+2025-03-19 22:34:30,512 - notifier - INFO - Notifier initialized
+2025-03-19 22:34:30,522 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:34:30,530 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:34:30,530 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:34:32,098 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:34:32,098 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00NTCHCU2
+2025-03-19 22:34:32,098 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00NTCHCU2
+2025-03-19 22:34:49,316 - scrapers - WARNING - Could not find regular price
+2025-03-19 22:34:49,332 - scrapers - WARNING - Could not find review information
+2025-03-19 22:34:55,737 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:34:55,750 - database - INFO - Added new product: Amazonベーシック 乾電池 単4形 アルカリ 保存期限10年 20個セット 1.5V 液漏れ防止 (ID: 9)
+2025-03-19 22:34:55,762 - __main__ - INFO - Added new product: Amazonベーシック 乾電池 単4形 アルカリ 保存期限10年 20個セット 1.5V 液漏れ防止 (ID: 9)
+2025-03-19 22:34:55,762 - database - INFO - Database connection closed
+2025-03-19 22:34:55,762 - __main__ - INFO - Database connection closed
+2025-03-19 22:35:02,424 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:35:02,424 - database - INFO - Database tables created or already exist
+2025-03-19 22:35:02,424 - notifier - INFO - Notifier initialized
+2025-03-19 22:35:02,424 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:35:02,424 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:35:02,424 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:35:03,790 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:35:03,790 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0936FGTX5
+2025-03-19 22:35:03,790 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0936FGTX5
+2025-03-19 22:35:22,302 - scrapers - WARNING - Could not find review information
+2025-03-19 22:35:28,687 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:35:28,699 - database - INFO - Added new product: Apple AirTag (ID: 10)
+2025-03-19 22:35:28,715 - __main__ - INFO - Added new product: Apple AirTag (ID: 10)
+2025-03-19 22:35:28,715 - database - INFO - Database connection closed
+2025-03-19 22:35:28,715 - __main__ - INFO - Database connection closed
+2025-03-19 22:35:33,904 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:35:33,904 - database - INFO - Database tables created or already exist
+2025-03-19 22:35:33,904 - notifier - INFO - Notifier initialized
+2025-03-19 22:35:33,917 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:35:33,919 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:35:33,919 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:35:35,230 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:35:35,230 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0DP41614X
+2025-03-19 22:35:35,230 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0DP41614X
+2025-03-19 22:35:55,648 - scrapers - WARNING - Could not find review information
+2025-03-19 22:36:02,028 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:36:02,041 - database - INFO - Added new product: イヤホン bluetooth ワイヤレスイヤホン 48時間の再生時間 重低音 LEDディスプレイ表示 小型/軽量 IPX7防水 ブルートゥース 接続瞬時 Hi-Fi ブルートゥース イヤホン Type-C 急速充電 ぶるーとぅーすイヤホン iPhone/Android/Pad適用 スポーツ/通勤/通学/WEB会議 (ホワイト) (ID: 11)
+2025-03-19 22:36:02,058 - __main__ - INFO - Added new product: イヤホン bluetooth ワイヤレスイヤホン 48時間の再生時間 重低音 LEDディスプレイ表示 小型/軽量 IPX7防水 ブルートゥース 接続瞬時 Hi-Fi ブルートゥース イヤホン Type-C 急速充電 ぶるーとぅーすイヤホン iPhone/Android/Pad適用 スポーツ/通勤/通学/WEB会議 (ホワイト) (ID: 11)
+2025-03-19 22:36:02,059 - database - INFO - Database connection closed
+2025-03-19 22:36:02,059 - __main__ - INFO - Database connection closed
+2025-03-19 22:36:07,394 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:36:07,398 - database - INFO - Database tables created or already exist
+2025-03-19 22:36:07,398 - notifier - INFO - Notifier initialized
+2025-03-19 22:36:07,398 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:36:07,406 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:36:07,406 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:36:08,838 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:36:08,838 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CQX67KTW
+2025-03-19 22:36:08,838 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CQX67KTW
+2025-03-19 22:36:27,787 - scrapers - WARNING - Could not find regular price
+2025-03-19 22:36:27,827 - scrapers - WARNING - Could not find review information
+2025-03-19 22:36:34,226 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:36:34,238 - database - INFO - Added new product: Anker Power Bank (10000mAh, 22.5W) (モバイルバッテリー 10000mAh 最大22.5W出力 USB-C & USB-C ケーブル付属 ディスプレイ搭載) 【USB PD/PowerIQ搭載/PSE技術基準適合】iPhone 16 / 15 Android iPad その他各種機器対応 (ブラック) (ID: 12)
+2025-03-19 22:36:34,253 - __main__ - INFO - Added new product: Anker Power Bank (10000mAh, 22.5W) (モバイルバッテリー 10000mAh 最大22.5W出力 USB-C & USB-C ケーブル付属 ディスプレイ搭載) 【USB PD/PowerIQ搭載/PSE技術基準適合】iPhone 16 / 15 Android iPad その他各種機器対応 (ブラック) (ID: 12)
+2025-03-19 22:36:34,253 - database - INFO - Database connection closed
+2025-03-19 22:36:34,255 - __main__ - INFO - Database connection closed
+2025-03-19 22:36:38,836 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:36:38,836 - database - INFO - Database tables created or already exist
+2025-03-19 22:36:38,836 - notifier - INFO - Notifier initialized
+2025-03-19 22:36:38,849 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:36:38,851 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:36:38,851 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:36:40,284 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:36:40,284 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0D9H1M2KM
+2025-03-19 22:36:40,284 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0D9H1M2KM
+2025-03-19 22:37:02,806 - scrapers - WARNING - Could not find review information
+2025-03-19 22:37:09,178 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:37:09,189 - database - INFO - Added new product: 対応 iPhone 16 ガラスフィルム apple iphone16 ガイド枠付き 指紋防止 【2* フィルム + 2* レンズ保護フィルム+ 1*ガイド枠付き+ 1*取り除き発泡板】国産旭硝子材質 アイフォン16 薄型 強化ガラス iPhone16 保護フィルム 高光沢 いpほね16 液晶 ガラス ケース 9H硬度 厚さ0.26mm超薄型 高透過率 気泡なし ラウンドエッジ加工 簡単貼り付け 3D Touch対応 SENXLL-16G05 (ID: 13)
+2025-03-19 22:37:09,194 - __main__ - INFO - Added new product: 対応 iPhone 16 ガラスフィルム apple iphone16 ガイド枠付き 指紋防止 【2* フィルム + 2* レンズ保護フィルム+ 1*ガイド枠付き+ 1*取り除き発泡板】国産旭硝子材質 アイフォン16 薄型 強化ガラス iPhone16 保護フィルム 高光沢 いpほね16 液晶 ガラス ケース 9H硬度 厚さ0.26mm超薄型 高透過率 気泡なし ラウンドエッジ加工 簡単貼り付け 3D Touch対応 SENXLL-16G05 (ID: 13)
+2025-03-19 22:37:09,194 - database - INFO - Database connection closed
+2025-03-19 22:37:09,194 - __main__ - INFO - Database connection closed
+2025-03-19 22:37:13,509 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:37:13,509 - database - INFO - Database tables created or already exist
+2025-03-19 22:37:13,509 - notifier - INFO - Notifier initialized
+2025-03-19 22:37:13,509 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:37:13,524 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:37:13,524 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:37:14,923 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:37:14,923 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B093667BW5
+2025-03-19 22:37:14,923 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B093667BW5
+2025-03-19 22:37:33,665 - scrapers - WARNING - Could not find review information
+2025-03-19 22:37:40,033 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:37:40,049 - database - INFO - Added new product: Apple AirTag 4個入り (ID: 14)
+2025-03-19 22:37:40,064 - __main__ - INFO - Added new product: Apple AirTag 4個入り (ID: 14)
+2025-03-19 22:37:40,064 - database - INFO - Database connection closed
+2025-03-19 22:37:40,064 - __main__ - INFO - Database connection closed
+2025-03-19 22:37:44,015 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:37:44,022 - database - INFO - Database tables created or already exist
+2025-03-19 22:37:44,022 - notifier - INFO - Notifier initialized
+2025-03-19 22:37:44,022 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:37:44,022 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:37:44,022 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:37:45,388 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:37:45,388 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B0CHXVBQHR
+2025-03-19 22:37:45,390 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B0CHXVBQHR
+2025-03-19 22:38:06,547 - scrapers - WARNING - Could not find review information
+2025-03-19 22:38:12,942 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:38:12,947 - database - INFO - Added new product: Apple AirPods Pro 2 ワイヤレスイヤーバッド、Bluetooth ヘッドフォン、アクティブノ イズキャンセリング、外部音取り込み、パーソナライズされた空間オーディオ、原音に 忠実なサウンド、H2 チップ、USB-C 充電 (ID: 15)
+2025-03-19 22:38:12,960 - __main__ - INFO - Added new product: Apple AirPods Pro 2 ワイヤレスイヤーバッド、Bluetooth ヘッドフォン、アクティブノ イズキャンセリング、外部音取り込み、パーソナライズされた空間オーディオ、原音に 忠実なサウンド、H2 チップ、USB-C 充電 (ID: 15)
+2025-03-19 22:38:12,960 - database - INFO - Database connection closed
+2025-03-19 22:38:12,960 - __main__ - INFO - Database connection closed
+2025-03-19 22:38:17,792 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:38:17,794 - database - INFO - Database tables created or already exist
+2025-03-19 22:38:17,794 - notifier - INFO - Notifier initialized
+2025-03-19 22:38:17,802 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:38:17,810 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:38:17,810 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:38:19,197 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:38:19,197 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B06ZXXQGZ8
+2025-03-19 22:38:19,197 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B06ZXXQGZ8
+2025-03-19 22:38:39,972 - scrapers - WARNING - Could not find regular price
+2025-03-19 22:38:39,990 - scrapers - WARNING - Could not find review information
+2025-03-19 22:38:46,408 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:38:46,438 - database - INFO - Added new product: Anker PowerPort 2 Elite (USB充電器 24W 2ポート) 【PSE技術基準適合/PowerIQ搭載/折りたたみ式プラグ搭載/旅行に最適】 iPhone/iPad/Galaxy その他Android各種対応 (ホワイト) (ID: 16)
+2025-03-19 22:38:46,456 - __main__ - INFO - Added new product: Anker PowerPort 2 Elite (USB充電器 24W 2ポート) 【PSE技術基準適合/PowerIQ搭載/折りたたみ式プラグ搭載/旅行に最適】 iPhone/iPad/Galaxy その他Android各種対応 (ホワイト) (ID: 16)
+2025-03-19 22:38:46,457 - database - INFO - Database connection closed
+2025-03-19 22:38:46,457 - __main__ - INFO - Database connection closed
+2025-03-19 22:45:00,552 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:45:00,558 - database - INFO - Database tables created or already exist
+2025-03-19 22:45:00,559 - notifier - INFO - Notifier initialized
+2025-03-19 22:45:00,564 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:45:00,564 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:45:00,564 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:45:02,531 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:45:02,531 - scrapers - INFO - Scraping Rakuten product: https://item.rakuten.co.jp/rakutenmobile-store/apple-rm2104016/
+2025-03-19 22:45:02,531 - scrapers - INFO - Fetching page: https://item.rakuten.co.jp/rakutenmobile-store/apple-rm2104016/
+2025-03-19 22:45:31,926 - scrapers - WARNING - Timeout waiting for item name to load
+2025-03-19 22:45:32,110 - scrapers - WARNING - Could not find product name
+2025-03-19 22:45:32,132 - scrapers - WARNING - Could not find product image
+2025-03-19 22:45:38,796 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:45:38,796 - __main__ - ERROR - Failed to scrape product data from: https://item.rakuten.co.jp/rakutenmobile-store/apple-rm2104016/
+2025-03-19 22:45:38,800 - database - INFO - Database connection closed
+2025-03-19 22:45:38,800 - __main__ - INFO - Database connection closed
+2025-03-19 22:47:21,319 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-19 22:47:21,319 - database - INFO - Database tables created or already exist
+2025-03-19 22:47:21,321 - notifier - INFO - Notifier initialized
+2025-03-19 22:47:21,326 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-19 22:47:21,333 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-19 22:47:21,333 - __main__ - INFO - ECTracker initialized
+2025-03-19 22:47:23,412 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-19 22:47:23,412 - scrapers - INFO - Scraping Rakuten product: https://item.rakuten.co.jp/rakuten24/e497354h/
+2025-03-19 22:47:23,412 - scrapers - INFO - Fetching page: https://item.rakuten.co.jp/rakuten24/e497354h/
+2025-03-19 22:47:52,344 - scrapers - WARNING - Timeout waiting for item name to load
+2025-03-19 22:47:52,531 - scrapers - WARNING - Could not find product name
+2025-03-19 22:47:52,547 - scrapers - WARNING - Could not find product image
+2025-03-19 22:47:58,974 - scrapers - INFO - Selenium WebDriver closed
+2025-03-19 22:47:58,974 - __main__ - ERROR - Failed to scrape product data from: https://item.rakuten.co.jp/rakuten24/e497354h/
+2025-03-19 22:47:58,994 - database - INFO - Database connection closed
+2025-03-19 22:47:58,994 - __main__ - INFO - Database connection closed
+2025-03-21 10:46:03,296 - database - INFO - Connected to sqlite database: ec_tracker.db
+2025-03-21 10:46:03,297 - database - INFO - Database tables created or already exist
+2025-03-21 10:46:03,297 - notifier - INFO - Notifier initialized
+2025-03-21 10:46:03,805 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 10:46:03,831 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 10:46:03,831 - __main__ - INFO - ECTracker initialized
+2025-03-21 10:46:06,135 - gsheets - INFO - Updated sheet: Products with 16 rows
+2025-03-21 10:46:06,136 - gsheets - INFO - Exported 16 products to Google Sheets
+2025-03-21 10:46:07,043 - gsheets - INFO - Updated sheet: PriceHistory with 38 rows
+2025-03-21 10:46:07,043 - gsheets - INFO - Exported price history for 16 products to Google Sheets
+2025-03-21 10:46:07,046 - database - INFO - Database connection closed
+2025-03-21 10:46:07,046 - __main__ - INFO - Database connection closed
