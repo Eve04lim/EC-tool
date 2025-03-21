@@ -1,4 +1,6 @@
 # analysis.py - データ分析・可視化モジュール
+import matplotlib
+matplotlib.use('Agg')  # GUI不要なバックエンドを指定（必ずここに追加する）
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -7,6 +9,7 @@ from datetime import datetime, timedelta
 import os
 import io
 import base64
+
 
 class PriceAnalyzer:
     """価格分析・可視化クラス"""

@@ -341,11 +341,10 @@ def scheduler_management():
     
     return render_template('scheduler.html', tasks=tasks)
 
-# スタティックフォルダの作成
-@app.before_first_request
+# 関数を普通に定義する（デコレータなし）
 def create_folders():
-    """必要なディレクトリを作成"""
     os.makedirs(os.path.join(app.static_folder, 'reports'), exist_ok=True)
+
 
 # バックグラウンドサービス開始
 def start_background_services():
@@ -368,15 +367,14 @@ def start_background_services():
     except Exception as e:
         print(f"バックグラウンドサービスの開始に失敗しました: {e}")
 
-# Flaskサーバー起動時にバックグラウンドサービスを開始
+# Flaskアプリ起動時に明示的に呼び出す
 if __name__ == '__main__':
-    # 別スレッドでバックグラウンドサービスを開始
+    create_folders()  # ←ここに追加！
+
+    # バックグラウンドサービスもこのままでOK
     bg_thread = threading.Thread(target=start_background_services)
     bg_thread.daemon = True
     bg_thread.start()
-    
-    # Herokuの環境変数PORTを取得（なければデフォルト5000を使用）
+
     port = int(os.getenv("PORT", 5000))
-    
-    # デバッグモードはプロダクション環境では無効化
     app.run(debug=not IS_PRODUCTION, host='0.0.0.0', port=port)

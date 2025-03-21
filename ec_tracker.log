@@ -824,3 +824,105 @@ Stacktrace:
 2025-03-21 10:46:07,043 - gsheets - INFO - Exported price history for 16 products to Google Sheets
 2025-03-21 10:46:07,046 - database - INFO - Database connection closed
 2025-03-21 10:46:07,046 - __main__ - INFO - Database connection closed
+2025-03-21 19:56:52,127 - database - INFO - Connected to postgresql database: ec_tracker.db
+2025-03-21 19:56:52,231 - database - INFO - Database tables created or already exist
+2025-03-21 19:56:52,231 - notifier - INFO - Notifier initialized
+2025-03-21 19:56:52,473 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 19:56:52,527 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 19:56:52,527 - __main__ - INFO - ECTracker initialized
+2025-03-21 19:56:54,365 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-21 19:56:54,365 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 19:56:54,365 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 19:57:11,562 - scrapers - WARNING - Could not find review information
+2025-03-21 19:57:13,780 - scrapers - INFO - Selenium WebDriver closed
+2025-03-21 19:57:13,820 - database - ERROR - Failed to add product: syntax error at or near ","
+LINE 1: ..._code, platform, created_at, updated_at) VALUES (?, ?, ?, ?,...
+                                                             ^
+
+2025-03-21 19:57:13,840 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B00ENWQYNS: syntax error at or near ","
+LINE 1: ..._code, platform, created_at, updated_at) VALUES (?, ?, ?, ?,...
+                                                             ^
+
+2025-03-21 19:57:13,846 - database - INFO - Database connection closed
+2025-03-21 19:57:13,846 - __main__ - INFO - Database connection closed
+2025-03-21 20:03:07,762 - database - INFO - Connected to postgresql database: ec_tracker.db
+2025-03-21 20:03:07,872 - database - INFO - Database tables created or already exist
+2025-03-21 20:03:07,872 - notifier - INFO - Notifier initialized
+2025-03-21 20:03:07,928 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 20:03:07,936 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 20:03:07,936 - __main__ - INFO - ECTracker initialized
+2025-03-21 20:03:09,504 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-21 20:03:09,504 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:03:09,504 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:03:27,313 - scrapers - WARNING - Could not find review information
+2025-03-21 20:03:29,504 - scrapers - INFO - Selenium WebDriver closed
+2025-03-21 20:03:29,506 - database - ERROR - Failed to add product: not all arguments converted during string formatting
+2025-03-21 20:03:29,507 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B00ENWQYNS: not all arguments converted during string formatting
+2025-03-21 20:03:29,512 - database - INFO - Database connection closed
+2025-03-21 20:03:29,513 - __main__ - INFO - Database connection closed
+2025-03-21 20:10:00,361 - database - INFO - Connected to postgresql database
+2025-03-21 20:10:00,467 - database - INFO - Database tables created or already exist
+2025-03-21 20:10:00,467 - notifier - INFO - Notifier initialized
+2025-03-21 20:10:00,477 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 20:10:00,485 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 20:10:00,486 - __main__ - INFO - ECTracker initialized
+2025-03-21 20:10:02,050 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-21 20:10:02,050 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:10:02,050 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:10:19,975 - scrapers - WARNING - Could not find review information
+2025-03-21 20:10:22,224 - scrapers - INFO - Selenium WebDriver closed
+2025-03-21 20:10:22,267 - database - ERROR - Failed to add product: null value in column "id" of relation "products" violates not-null constraint
+DETAIL:  Failing row contains (null, by Amazon H“cŒ§ŽY ‚ ‚«‚½‚±‚Ü‚¿ –³ô•Ä 5kg —ß˜a6..., https://www.amazon.co.jp/dp/B00ENWQYNS, https://m.media-amazon.com/images/I/71O8WIga14L._AC_SX679_.jpg, B00ENWQYNS, amazon, 2025-03-21 20:10:22.225872, 2025-03-21 20:10:22.225872).
+
+2025-03-21 20:10:22,297 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B00ENWQYNS: null value in column "id" of relation "products" violates not-null constraint
+DETAIL:  Failing row contains (null, by Amazon H“cŒ§ŽY ‚ ‚«‚½‚±‚Ü‚¿ –³ô•Ä 5kg —ß˜a6..., https://www.amazon.co.jp/dp/B00ENWQYNS, https://m.media-amazon.com/images/I/71O8WIga14L._AC_SX679_.jpg, B00ENWQYNS, amazon, 2025-03-21 20:10:22.225872, 2025-03-21 20:10:22.225872).
+
+2025-03-21 20:10:22,298 - database - INFO - Database connection closed
+2025-03-21 20:10:22,298 - __main__ - INFO - Database connection closed
+2025-03-21 20:12:48,254 - database - INFO - Connected to postgresql database
+2025-03-21 20:12:48,362 - database - INFO - Database tables created or already exist
+2025-03-21 20:12:48,363 - notifier - INFO - Notifier initialized
+2025-03-21 20:12:48,376 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 20:12:48,385 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 20:12:48,386 - __main__ - INFO - ECTracker initialized
+2025-03-21 20:12:49,871 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-21 20:12:49,871 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:12:49,872 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:13:05,068 - scrapers - WARNING - Could not find review information
+2025-03-21 20:13:07,281 - scrapers - INFO - Selenium WebDriver closed
+2025-03-21 20:13:07,334 - database - ERROR - Failed to add product: null value in column "id" of relation "products" violates not-null constraint
+DETAIL:  Failing row contains (null, by Amazon H“cŒ§ŽY ‚ ‚«‚½‚±‚Ü‚¿ –³ô•Ä 5kg —ß˜a6..., https://www.amazon.co.jp/dp/B00ENWQYNS, https://m.media-amazon.com/images/I/71O8WIga14L._AC_SX679_.jpg, B00ENWQYNS, amazon, 2025-03-21 20:13:07.282492, 2025-03-21 20:13:07.282492).
+
+2025-03-21 20:13:07,424 - __main__ - ERROR - Error adding product https://www.amazon.co.jp/dp/B00ENWQYNS: null value in column "id" of relation "products" violates not-null constraint
+DETAIL:  Failing row contains (null, by Amazon H“cŒ§ŽY ‚ ‚«‚½‚±‚Ü‚¿ –³ô•Ä 5kg —ß˜a6..., https://www.amazon.co.jp/dp/B00ENWQYNS, https://m.media-amazon.com/images/I/71O8WIga14L._AC_SX679_.jpg, B00ENWQYNS, amazon, 2025-03-21 20:13:07.282492, 2025-03-21 20:13:07.282492).
+
+2025-03-21 20:13:07,426 - database - INFO - Database connection closed
+2025-03-21 20:13:07,426 - __main__ - INFO - Database connection closed
+2025-03-21 20:32:29,620 - database - INFO - Connected to postgresql database
+2025-03-21 20:32:29,724 - database - INFO - Database tables created or already exist
+2025-03-21 20:32:29,725 - notifier - INFO - Notifier initialized
+2025-03-21 20:32:29,736 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 20:32:29,746 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 20:32:29,747 - __main__ - INFO - ECTracker initialized
+2025-03-21 20:32:31,348 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-21 20:32:31,349 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:32:31,349 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B00ENWQYNS
+2025-03-21 20:32:48,938 - scrapers - WARNING - Could not find review information
+2025-03-21 20:32:51,142 - scrapers - INFO - Selenium WebDriver closed
+2025-03-21 20:32:51,211 - database - INFO - Added new product: by Amazon H“cŒ§ŽY ‚ ‚«‚½‚±‚Ü‚¿ –³ô•Ä 5kg —ß˜a6”NŽY (ID: 1)
+2025-03-21 20:32:51,283 - database - INFO - Added price history for product 1
+2025-03-21 20:32:51,283 - __main__ - INFO - Added new product: by Amazon H“cŒ§ŽY ‚ ‚«‚½‚±‚Ü‚¿ –³ô•Ä 5kg —ß˜a6”NŽY (ID: 1)
+2025-03-21 20:32:51,286 - database - INFO - Database connection closed
+2025-03-21 20:32:51,286 - __main__ - INFO - Database connection closed
+2025-03-21 20:40:43,099 - database - INFO - Connected to postgresql database
+2025-03-21 20:40:43,267 - database - INFO - Database tables created or already exist
+2025-03-21 20:40:43,267 - notifier - INFO - Notifier initialized
+2025-03-21 20:40:43,272 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-21 20:40:43,275 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-21 20:40:43,275 - __main__ - INFO - ECTracker initialized
+2025-03-21 20:40:45,271 - gsheets - INFO - Updated sheet: Products with 1 rows
+2025-03-21 20:40:45,271 - gsheets - INFO - Exported 1 products to Google Sheets
+2025-03-21 20:40:46,096 - gsheets - INFO - Updated sheet: PriceHistory with 1 rows
+2025-03-21 20:40:46,096 - gsheets - INFO - Exported price history for 1 products to Google Sheets
+2025-03-21 20:40:46,099 - database - INFO - Database connection closed
+2025-03-21 20:40:46,099 - __main__ - INFO - Database connection closed
