@@ -1,17 +1,24 @@
 # config.py - 設定ファイル
 import os
+import re
 from dotenv import load_dotenv
 
 # .env ファイルから環境変数を読み込む
 load_dotenv()
 
-# データベース設定
-DB_TYPE = os.getenv("DB_TYPE", "sqlite")  # sqlite または postgresql
-DB_NAME = os.getenv("DB_NAME", "ec_tracker.db")
-DB_USER = os.getenv("DB_USER", "")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "")
-DB_HOST = os.getenv("DB_HOST", "")
-DB_PORT = os.getenv("DB_PORT", "")
+# データベース設定 - Heroku対応
+DATABASE_URL = os.getenv("DATABASE_URL")
+if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
+    # Herokuのpostgres://をpostgresql://に置換（SQLAlchemy 1.4+対応）
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+    DB_TYPE = "postgresql"
+else:
+    DB_TYPE = os.getenv("DB_TYPE", "sqlite")
+    DB_NAME = os.getenv("DB_NAME", "ec_tracker.db")
+    DB_USER = os.getenv("DB_USER", "")
+    DB_PASSWORD = os.getenv("DB_PASSWORD", "")
+    DB_HOST = os.getenv("DB_HOST", "")
+    DB_PORT = os.getenv("DB_PORT", "")
 
 # EC サイト設定
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
@@ -19,9 +26,10 @@ REQUEST_TIMEOUT = 30
 REQUEST_RETRY = 3
 REQUEST_INTERVAL = 5  # 秒
 
-# Selenium 設定
+# Selenium 設定 - Heroku対応
 SELENIUM_TIMEOUT = 30
 SELENIUM_WAIT = 5  # 秒
+CHROME_DRIVER_PATH = os.getenv("CHROME_DRIVER_PATH", "chromedriver")  # Herokuでは単にバイナリ名を指定
 
 # 通知設定
 NOTIFICATION_PRICE_THRESHOLD = 10  # パーセント
@@ -49,5 +57,5 @@ LOG_FILE = os.getenv("LOG_FILE", "ec_tracker.log")
 ENABLE_PROXY = os.getenv("ENABLE_PROXY", "False").lower() == "true"
 PROXY_LIST = os.getenv("PROXY_LIST", "").split(",") if os.getenv("PROXY_LIST") else []
 
-# CHROME_DRIVER_PATHの設定
-CHROME_DRIVER_PATH = os.getenv("CHROME_DRIVER_PATH", "C:\\chromedriver\\chromedriver.exe")
+# デプロイ環境設定
+IS_PRODUCTION = os.getenv("FLASK_ENV") == "production"

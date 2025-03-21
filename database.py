@@ -1,11 +1,12 @@
 # database.py - スレッドセーフ版
 import logging
+import os
 import sqlite3
 import psycopg2
 from datetime import datetime
 import threading
 
-from config import DB_TYPE, DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT
+from config import DATABASE_URL, DB_TYPE, DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT
 
 logger = logging.getLogger(__name__)
 
@@ -26,13 +27,18 @@ class Database:
                 self._local.connection = sqlite3.connect(DB_NAME)
                 self._local.connection.row_factory = sqlite3.Row
             elif DB_TYPE.lower() == "postgresql":
-                self._local.connection = psycopg2.connect(
-                    dbname=DB_NAME,
-                    user=DB_USER,
-                    password=DB_PASSWORD,
-                    host=DB_HOST,
-                    port=DB_PORT
-                )
+                # Herokuの環境変数DATABASE_URLがある場合はそれを使用
+                if 'DATABASE_URL' in os.environ:
+                    import psycopg2
+                    self._local.connection = psycopg2.connect(DATABASE_URL)
+                else:
+                    self._local.connection = psycopg2.connect(
+                        dbname=DB_NAME,
+                        user=DB_USER,
+                        password=DB_PASSWORD,
+                        host=DB_HOST,
+                        port=DB_PORT
+                    )
             else:
                 raise ValueError(f"Unsupported database type: {DB_TYPE}")
             

@@ -1,15 +1,17 @@
-# app.py - スレッドセーフ版 Webダッシュボード（拡張機能搭載）
+# app.py - スレッドセーフ版 Webダッシュボード（拡張機能搭載、Herokuデプロイ対応）
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, g, send_file
 import os
+import sys
 import pandas as pd
 import json
 from datetime import datetime, timedelta
 import subprocess
 import threading
 from database import Database
+from config import IS_PRODUCTION
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
-app.secret_key = 'ec-tracker-secret-key'
+app.secret_key = os.getenv('SECRET_KEY', 'ec-tracker-secret-key')
 
 # リクエストごとにデータベース接続を取得する関数
 def get_db():
@@ -67,53 +69,100 @@ def add_product():
     if request.method == 'POST':
         url = request.form.get('url')
         if url:
-            result = subprocess.run(
-                ['python', 'main.py', 'add', url],
-                capture_output=True,
-                text=True
-            )
-            if "商品を追加しました" in result.stdout:
-                flash('商品を追加しました', 'success')
+            # Heroku環境ではサブプロセスの代わりに直接関数を呼び出す
+            if IS_PRODUCTION:
+                try:
+                    from main import ECTracker
+                    tracker = ECTracker()
+                    product_id = tracker.add_product(url)
+                    tracker.cleanup()
+                    
+                    if product_id:
+                        flash('商品を追加しました', 'success')
+                    else:
+                        flash('追加に失敗しました', 'error')
+                except Exception as e:
+                    flash(f'追加に失敗しました: {str(e)}', 'error')
             else:
-                flash(f'追加に失敗しました: {result.stderr}', 'error')
+                # 開発環境ではサブプロセスを使用
+                result = subprocess.run(
+                    [sys.executable, 'main.py', 'add', url],
+                    capture_output=True,
+                    text=True
+                )
+                if "商品を追加しました" in result.stdout:
+                    flash('商品を追加しました', 'success')
+                else:
+                    flash(f'追加に失敗しました: {result.stderr}', 'error')
         return redirect(url_for('index'))
     
     return render_template('add_product.html')
 
 @app.route('/update')
 def update_products():
-    result = subprocess.run(
-        ['python', 'main.py', 'update'],
-        capture_output=True,
-        text=True
-    )
-    if result.returncode == 0:
-        flash('商品情報を更新しました', 'success')
+    # Heroku環境ではサブプロセスの代わりに直接関数を呼び出す
+    if IS_PRODUCTION:
+        try:
+            from main import ECTracker
+            tracker = ECTracker()
+            count = tracker.update_all_products()
+            tracker.cleanup()
+            
+            flash(f'{count}件の商品情報を更新しました', 'success')
+        except Exception as e:
+            flash(f'更新に失敗しました: {str(e)}', 'error')
     else:
-        flash(f'更新に失敗しました: {result.stderr}', 'error')
+        # 開発環境ではサブプロセスを使用
+        result = subprocess.run(
+            [sys.executable, 'main.py', 'update'],
+            capture_output=True,
+            text=True
+        )
+        if result.returncode == 0:
+            flash('商品情報を更新しました', 'success')
+        else:
+            flash(f'更新に失敗しました: {result.stderr}', 'error')
     return redirect(url_for('index'))
 
 @app.route('/export')
 def export_to_sheets():
-    result = subprocess.run(
-        ['python', 'main.py', 'export'],
-        capture_output=True,
-        text=True
-    )
-    
-    # スプレッドシートURLを抽出
+    # Heroku環境ではサブプロセスの代わりに直接関数を呼び出す
     sheet_url = None
-    for line in result.stdout.split('\n'):
-        if "スプレッドシートURL" in line:
-            sheet_url = line.split(': ')[1]
     
-    if result.returncode == 0:
-        if sheet_url:
-            flash(f'Google Sheetsにエクスポートしました: <a href="{sheet_url}" target="_blank">スプレッドシートを開く</a>', 'success')
-        else:
-            flash('Google Sheetsにエクスポートしました', 'success')
+    if IS_PRODUCTION:
+        try:
+            from main import ECTracker
+            tracker = ECTracker()
+            success = tracker.export_to_gsheets()
+            tracker.cleanup()
+            
+            if success:
+                flash('Google Sheetsにエクスポートしました', 'success')
+            else:
+                flash('エクスポートに失敗しました', 'error')
+        except Exception as e:
+            flash(f'エクスポートに失敗しました: {str(e)}', 'error')
     else:
-        flash(f'エクスポートに失敗しました: {result.stderr}', 'error')
+        # 開発環境ではサブプロセスを使用
+        result = subprocess.run(
+            [sys.executable, 'main.py', 'export'],
+            capture_output=True,
+            text=True
+        )
+        
+        # スプレッドシートURLを抽出
+        for line in result.stdout.split('\n'):
+            if "スプレッドシートURL" in line:
+                sheet_url = line.split(': ')[1]
+        
+        if result.returncode == 0:
+            if sheet_url:
+                flash(f'Google Sheetsにエクスポートしました: <a href="{sheet_url}" target="_blank">スプレッドシートを開く</a>', 'success')
+            else:
+                flash('Google Sheetsにエクスポートしました', 'success')
+        else:
+            flash(f'エクスポートに失敗しました: {result.stderr}', 'error')
+    
     return redirect(url_for('index'))
 
 @app.route('/reports')
@@ -292,6 +341,12 @@ def scheduler_management():
     
     return render_template('scheduler.html', tasks=tasks)
 
+# スタティックフォルダの作成
+@app.before_first_request
+def create_folders():
+    """必要なディレクトリを作成"""
+    os.makedirs(os.path.join(app.static_folder, 'reports'), exist_ok=True)
+
 # バックグラウンドサービス開始
 def start_background_services():
     """バックグラウンドサービスを開始"""
@@ -320,4 +375,8 @@ if __name__ == '__main__':
     bg_thread.daemon = True
     bg_thread.start()
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Herokuの環境変数PORTを取得（なければデフォルト5000を使用）
+    port = int(os.getenv("PORT", 5000))
+    
+    # デバッグモードはプロダクション環境では無効化
+    app.run(debug=not IS_PRODUCTION, host='0.0.0.0', port=port)
