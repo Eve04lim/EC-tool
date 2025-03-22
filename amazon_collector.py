@@ -45,8 +45,14 @@ class AmazonCollector:
             chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
             chrome_options.add_experimental_option("useAutomationExtension", False)
             
-            # 指定されたパスのChromeドライバーを使用
-            service = Service("C:\\chromedriver\\chromedriver.exe")
+            # Heroku環境かどうかを判定
+            import os
+            if os.environ.get("DYNO"):  # Herokuで実行している場合
+                chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
+                service = Service()
+            else:
+                # ローカル環境の場合は指定されたパスのChromeドライバーを使用
+                service = Service("C:\\chromedriver\\chromedriver.exe")
             
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
             # WebDriverフラグを偽装
