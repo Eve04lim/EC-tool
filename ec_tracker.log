@@ -942,3 +942,86 @@ DETAIL:  Failing row contains (null, by Amazon 秋田県産 あきたこまち 無洗米 5kg 
 2025-03-21 20:54:58,552 - __main__ - INFO - Added new product: イヤホン bluetooth ワイヤレスイヤホン 48時間の再生時間 重低音 LEDディスプレイ表示 小型/軽量 IPX7防水 ブルートゥース 接続瞬時 Hi-Fi ブルートゥース イヤホン Type-C 急速充電 ぶるーとぅーすイヤホン iPhone/Android/Pad適用 スポーツ/通勤/通学/WEB会議 (ホワイト) (ID: 2)
 2025-03-21 20:54:58,559 - database - INFO - Database connection closed
 2025-03-21 20:54:58,559 - __main__ - INFO - Database connection closed
+2025-03-22 11:05:46,189 - database - INFO - Connected to postgresql database
+2025-03-22 11:05:46,302 - database - INFO - Database tables created or already exist
+2025-03-22 11:05:46,302 - notifier - INFO - Notifier initialized
+2025-03-22 11:05:46,867 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-22 11:05:46,890 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-22 11:05:46,890 - __main__ - INFO - ECTracker initialized
+2025-03-22 11:05:48,306 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-22 11:05:48,306 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08K2CHMWK
+2025-03-22 11:05:48,306 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08K2CHMWK
+2025-03-22 11:06:05,101 - scrapers - WARNING - Could not find regular price
+2025-03-22 11:06:05,113 - scrapers - WARNING - Could not find review information
+2025-03-22 11:06:11,352 - scrapers - INFO - Selenium WebDriver closed
+2025-03-22 11:06:11,411 - database - INFO - Added new product: ロジクール ワイヤレスキーボード K295GP 静音 耐水 キーボード 無線 Unifying K295 windows chrome グラファイト 国内正規品 (ID: 3)
+2025-03-22 11:06:11,474 - database - INFO - Added price history for product 3
+2025-03-22 11:06:11,475 - __main__ - INFO - Added new product: ロジクール ワイヤレスキーボード K295GP 静音 耐水 キーボード 無線 Unifying K295 windows chrome グラファイト 国内正規品 (ID: 3)
+2025-03-22 11:06:11,478 - database - INFO - Database connection closed
+2025-03-22 11:06:11,478 - __main__ - INFO - Database connection closed
+2025-03-22 11:06:15,211 - database - INFO - Connected to postgresql database
+2025-03-22 11:06:15,309 - database - INFO - Database tables created or already exist
+2025-03-22 11:06:15,310 - notifier - INFO - Notifier initialized
+2025-03-22 11:06:15,343 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-22 11:06:15,351 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-22 11:06:15,351 - __main__ - INFO - ECTracker initialized
+2025-03-22 11:06:16,572 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-22 11:06:16,572 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B07PJW2X2F
+2025-03-22 11:06:16,572 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B07PJW2X2F
+2025-03-22 11:06:32,982 - scrapers - WARNING - Could not find review information
+2025-03-22 11:06:39,226 - scrapers - INFO - Selenium WebDriver closed
+2025-03-22 11:06:39,301 - database - INFO - Added new product: エレコム ワイヤレスキーボード メンブレン 薄型 フルキーボード テンキー ブラック TK-FDM110TXBK (ID: 4)
+2025-03-22 11:06:39,360 - database - INFO - Added price history for product 4
+2025-03-22 11:06:39,360 - __main__ - INFO - Added new product: エレコム ワイヤレスキーボード メンブレン 薄型 フルキーボード テンキー ブラック TK-FDM110TXBK (ID: 4)
+2025-03-22 11:06:39,361 - database - INFO - Database connection closed
+2025-03-22 11:06:39,361 - __main__ - INFO - Database connection closed
+2025-03-22 11:06:44,535 - database - INFO - Connected to postgresql database
+2025-03-22 11:06:44,633 - database - INFO - Database tables created or already exist
+2025-03-22 11:06:44,633 - notifier - INFO - Notifier initialized
+2025-03-22 11:06:44,637 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-22 11:06:44,639 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-22 11:06:44,639 - __main__ - INFO - ECTracker initialized
+2025-03-22 11:06:45,874 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-22 11:06:45,875 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B01HGGWZMG
+2025-03-22 11:06:45,875 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B01HGGWZMG
+2025-03-22 11:07:04,912 - scrapers - WARNING - Could not find review information
+2025-03-22 11:07:11,177 - scrapers - INFO - Selenium WebDriver closed
+2025-03-22 11:07:11,239 - database - INFO - Added new product: エレコム 有線キーボード メンブレン ブラック TK-FFCM01BK (ID: 5)
+2025-03-22 11:07:11,300 - database - INFO - Added price history for product 5
+2025-03-22 11:07:11,302 - __main__ - INFO - Added new product: エレコム 有線キーボード メンブレン ブラック TK-FFCM01BK (ID: 5)
+2025-03-22 11:07:11,302 - database - INFO - Database connection closed
+2025-03-22 11:07:11,302 - __main__ - INFO - Database connection closed
+2025-03-22 11:07:15,042 - database - INFO - Connected to postgresql database
+2025-03-22 11:07:15,145 - database - INFO - Database tables created or already exist
+2025-03-22 11:07:15,145 - notifier - INFO - Notifier initialized
+2025-03-22 11:07:15,149 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-22 11:07:15,152 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-22 11:07:15,152 - __main__ - INFO - ECTracker initialized
+2025-03-22 11:07:16,336 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-22 11:07:16,336 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B08CRN2P44
+2025-03-22 11:07:16,336 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B08CRN2P44
+2025-03-22 11:07:33,094 - scrapers - WARNING - Could not find regular price
+2025-03-22 11:07:33,107 - scrapers - WARNING - Could not find review information
+2025-03-22 11:07:39,348 - scrapers - INFO - Selenium WebDriver closed
+2025-03-22 11:07:39,430 - database - INFO - Added new product: バッファロー BUFFALO ワイヤレス 無線 フルキーボード 高耐久 電池長持ち リモート テレワーク 疲れにくいデザイン 簡単接続 安心サポート BSKBW125BK (ID: 6)
+2025-03-22 11:07:39,502 - database - INFO - Added price history for product 6
+2025-03-22 11:07:39,502 - __main__ - INFO - Added new product: バッファロー BUFFALO ワイヤレス 無線 フルキーボード 高耐久 電池長持ち リモート テレワーク 疲れにくいデザイン 簡単接続 安心サポート BSKBW125BK (ID: 6)
+2025-03-22 11:07:39,506 - database - INFO - Database connection closed
+2025-03-22 11:07:39,506 - __main__ - INFO - Database connection closed
+2025-03-22 11:07:45,969 - database - INFO - Connected to postgresql database
+2025-03-22 11:07:46,080 - database - INFO - Database tables created or already exist
+2025-03-22 11:07:46,080 - notifier - INFO - Notifier initialized
+2025-03-22 11:07:46,093 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-03-22 11:07:46,102 - gsheets - INFO - Authenticated with Google Sheets API
+2025-03-22 11:07:46,103 - __main__ - INFO - ECTracker initialized
+2025-03-22 11:07:47,507 - scrapers - INFO - Selenium WebDriver initialized in headless mode
+2025-03-22 11:07:47,507 - scrapers - INFO - Scraping Amazon product: https://www.amazon.co.jp/dp/B07JGP94GS
+2025-03-22 11:07:47,507 - scrapers - INFO - Fetching page: https://www.amazon.co.jp/dp/B07JGP94GS
+2025-03-22 11:08:03,497 - scrapers - WARNING - Could not find regular price
+2025-03-22 11:08:03,515 - scrapers - WARNING - Could not find review information
+2025-03-22 11:08:09,767 - scrapers - INFO - Selenium WebDriver closed
+2025-03-22 11:08:09,830 - database - INFO - Added new product: バッファロー BUFFALO USB接続 有線スタンダードキーボード ブラック BSKBU105BK【Windows/PS4/Nintendo Switch対応】 (ID: 7)
+2025-03-22 11:08:09,895 - database - INFO - Added price history for product 7
+2025-03-22 11:08:09,895 - __main__ - INFO - Added new product: バッファロー BUFFALO USB接続 有線スタンダードキーボード ブラック BSKBU105BK【Windows/PS4/Nintendo Switch対応】 (ID: 7)
+2025-03-22 11:08:09,896 - database - INFO - Database connection closed
+2025-03-22 11:08:09,896 - __main__ - INFO - Database connection closed

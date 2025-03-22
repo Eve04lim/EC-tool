@@ -1,55 +1,65 @@
-# ECサイト価格・在庫追跡ツール
+# EC商品価格追跡ツール
 
-![バージョン](https://img.shields.io/badge/バージョン-1.0.0-blue)
-![Python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)
-![ライセンス](https://img.shields.io/badge/ライセンス-MIT-green)
+## 概要
 
-ECサイト価格・在庫追跡ツールは、Amazon、楽天市場、Yahoo!ショッピングなどの主要ECサイトの商品価格と在庫状況を自動的に追跡し、分析するWebアプリケーションです。価格変動や在庫状況の変化を通知し、最適な購入タイミングを提案します。
+このプロジェクトは、ECサイト（Amazon、楽天市場、Yahoo!ショッピング）の商品価格と在庫状況を自動的に追跡し、価格変動を分析するシステムです。ユーザーは関心のある商品のURLを登録するだけで、価格変動の通知や最適な購入タイミングの提案を受けることができます。
 
 ## 主な機能
 
-- **マルチECサイト対応**: Amazon、楽天市場、Yahoo!ショッピングの商品を一元管理
-- **自動価格・在庫追跡**: 定期的に最新情報を取得し、データベースに保存
-- **価格変動アラート**: 価格が10%以上変動した場合に通知
-- **在庫アラート**: 在庫状況に変化があった場合に通知
-- **価格推移グラフ**: 商品ごとの価格推移を視覚化
-- **価格予測**: 機械学習を活用した将来価格の予測
-- **買い時判定**: 現在が購入に適した時期かを分析
-- **マーケットインサイト**: ECサイト間の価格比較や市場傾向の分析
-- **Google Sheets連携**: 収集データを自動的にスプレッドシートに転送
+- 複数のECサイト（Amazon、楽天、Yahoo!ショッピング）の商品情報収集
+- 価格履歴のグラフ表示と分析
+- 在庫状況の追跡と通知
+- 価格予測と「買い時」分析
+- プラットフォーム比較分析
+- Google Sheetsへのデータエクスポート機能
+- メール・Slack・LINE通知機能
 
-## 使用技術
+## 技術スタック
 
-- **バックエンド**:
-  - Python 3.7+
-  - Flask (Webフレームワーク)
-  - SQLite/PostgreSQL (データベース)
-  - Beautiful Soup/Selenium (Webスクレイピング)
-  - Pandas/NumPy (データ分析)
-  - scikit-learn (機械学習)
-  - Google Sheets API (スプレッドシート連携)
+- **バックエンド**: Python、Flask
+- **データベース**: PostgreSQL (Supabase)、SQLite (開発環境)
+- **データ収集**: Selenium、BeautifulSoup4、Requests
+- **データ分析**: Pandas、NumPy、Scikit-learn
+- **可視化**: Matplotlib、Seaborn
+- **デプロイ**: Heroku
 
-- **フロントエンド**:
-  - HTML5/CSS3
-  - Bootstrap 5 (UIフレームワーク)
-  - JavaScript
-  - Chart.js (グラフ描画)
+## アーキテクチャ
 
-- **その他**:
-  - Schedule (自動化)
-  - SMTP/Slack API (通知)
-  - Matplotlib/Seaborn (データ可視化)
+本システムは以下の2つの主要コンポーネントで構成されています：
+
+1. **ウェブアプリケーション**: ユーザーインターフェース、データ分析、通知管理を担当
+2. **データ収集スクリプト**: ECサイトから商品情報を収集（別プロセスとして実行）
+
+この設計により、リソース消費の大きいスクレイピング処理をメインアプリケーションから分離し、Herokuのスラグサイズ制限に対応しています。
+
+## データベース
+
+当初はSQLiteを使用していましたが、拡張性と信頼性の向上のためSupabase（PostgreSQL）に移行しました。これにより：
+
+- クラウド上の安定したデータ管理
+- リアルタイムデータ更新
+- 複数デバイスからのアクセス
+- 自動バックアップ
+
+が実現できました。
 
 ## インストール方法
 
-### 前提条件
-- Python 3.7以上
-- pip (Pythonパッケージマネージャー)
-- Chrome/Chromium (Seleniumで使用)
-
-### セットアップ手順
-
-1. リポジトリをクローン:
 ```bash
-git clone https://github.com/yourusername/ec-tracker.git
-cd ec-tracker
+# リポジトリのクローン
+git clone https://github.com/yourusername/ec-price-tracker.git
+cd ec-price-tracker
+
+# 仮想環境の作成と有効化
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 依存パッケージのインストール
+pip install -r requirements.txt
+
+# 環境変数の設定
+cp .env.example .env
+# .envファイルを編集して必要な情報を入力
+
+# アプリケーションの実行
+python app.py
