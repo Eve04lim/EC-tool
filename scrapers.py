@@ -47,16 +47,16 @@ class BaseScraper(ABC):
             if self.proxy:
                 chrome_options.add_argument(f"--proxy-server={self.proxy}")
 
-            # ✅ Heroku環境なら /usr/bin を使う
+            # Heroku環境用の特別処理
             if os.environ.get("DYNO"):
-                chrome_options.binary_location = "/usr/bin/chromium-browser"
-                driver_path = "/usr/bin/chromedriver"
+                chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
+                service = Service(os.environ.get("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver"))
             else:
-                # ローカル用
-                driver_path = "C:\\chromedriver\\chromedriver.exe"
+                # ローカル環境
+                service = Service("C:\\chromedriver\\chromedriver.exe")
 
-            service = Service(driver_path)
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
+
             self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
             self.driver.set_page_load_timeout(SELENIUM_TIMEOUT)
             self.driver.set_window_size(1366, 768)

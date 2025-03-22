@@ -1,5 +1,6 @@
 # amazon_collector.py ヘッドレスモード有効化版
 import logging
+import os
 import time
 import random
 import requests
@@ -34,24 +35,21 @@ class AmazonCollector:
         """Seleniumの設定"""
         try:
             chrome_options = Options()
-            # ヘッドレスモードを有効化
-            chrome_options.add_argument("--headless=new")
+            chrome_options.add_argument("--headless")
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
-            chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
-            
+            chrome_options.add_argument("--disable-gpu")            
             # ボット検出回避のための追加設定
             chrome_options.add_argument("--disable-blink-features=AutomationControlled")
             chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
             chrome_options.add_experimental_option("useAutomationExtension", False)
             
-            # Heroku環境かどうかを判定
-            import os
-            if os.environ.get("DYNO"):  # Herokuで実行している場合
-                chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-                service = Service()
+            # Heroku環境用の特別処理
+            if os.environ.get("DYNO"):
+                chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
+                service = Service(os.environ.get("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver"))
             else:
-                # ローカル環境の場合は指定されたパスのChromeドライバーを使用
+                # ローカル環境
                 service = Service("C:\\chromedriver\\chromedriver.exe")
             
             self.driver = webdriver.Chrome(service=service, options=chrome_options)
