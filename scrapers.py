@@ -49,7 +49,7 @@ class BaseScraper(ABC):
 
             # Heroku環境用の特別処理
             if os.environ.get("DYNO"):
-                chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
+                chrome_options.binary_location = os.environ.get("CHROME_EXECUTABLE_PATH", "/app/.chrome/bin/chrome")
                 service = Service(os.environ.get("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver"))
             else:
                 # ローカル環境
